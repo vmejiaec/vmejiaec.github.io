@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_JUR_JUR_ContratoTipoServicio" data-uid="Application.Servicios.JUR.JUR_ContratoTipoServicio" class="text-break">Class JUR_ContratoTipoServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de tipos de contratos</p>
+<ul>
+<li>Este servicio se utiliza para actualizar los estados del contrato</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_ContratoTipoServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_ContratoTipoServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L14">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L18">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_ContratoTipoServicio__ctor_" data-uid="Application.Servicios.JUR.JUR_ContratoTipoServicio.#ctor*"></a>
   <h4 id="Application_Servicios_JUR_JUR_ContratoTipoServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.JUR.JUR_ContratoTipoServicio.#ctor(Infrastructure.Data.SiproContext)">JUR_ContratoTipoServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_ContratoTipoServicio_SwitchEstadoAsync_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_ContratoTipoServicio.SwitchEstadoAsync(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L19">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L37">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_ContratoTipoServicio_SwitchEstadoAsync_" data-uid="Application.Servicios.JUR.JUR_ContratoTipoServicio.SwitchEstadoAsync*"></a>
   <h4 id="Application_Servicios_JUR_JUR_ContratoTipoServicio_SwitchEstadoAsync_System_Int32_System_Boolean_" data-uid="Application.Servicios.JUR.JUR_ContratoTipoServicio.SwitchEstadoAsync(System.Int32,System.Boolean)">SwitchEstadoAsync(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cambia el estado de un contrato, marcándolo como si es contrato o no</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,12 +179,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">JurContratoId</span></td>
-        <td></td>
+        <td><p>Identificador del contrato a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">Cumple</span></td>
-        <td></td>
+        <td><p>Valor que indica si el contrato cumple (true) o no (false).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,7 +201,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>El contrato no se encuentra.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +234,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_ContratoTipoServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_ContratoTipoServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_ContratoTipoServicio.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

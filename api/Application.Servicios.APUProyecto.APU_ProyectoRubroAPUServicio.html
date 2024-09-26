@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,12 @@
   
   <h1 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio" class="text-break">Class APU_ProyectoRubroAPUServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Rubros APU de Proyecto.</p>
+<ul>
+<li>Este servicio cuenta con varias funcionalidades relacionadas con la tabla APU_ProyectoRubroAPU, tales como consultas, carga,
+actualización, eliminación y lectura de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +122,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L21">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio__ctor_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.#ctor(Infrastructure.Data.SiproContext)">APU_ProyectoRubroAPUServicio(SiproContext)</h4>
@@ -151,11 +156,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarEquipoAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarEquipoAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L709">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L810">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarEquipoAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarEquipoAsync_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarEquipoAsync(System.String)">BuscarEquipoAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca equipos en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +180,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los equipos. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,7 +196,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan los equipos encontrados. Cada objeto contiene el identificador y el nombre del equipo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si el término proporcionado es <code>null</code>, vacío o solo contiene espacios en blanco.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -198,11 +222,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarManoObraAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarManoObraAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L756">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L875">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarManoObraAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarManoObraAsync_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarManoObraAsync(System.String)">BuscarManoObraAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca manos de obra en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +246,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las manos de obra. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,7 +262,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan las manos de obra encontrados. Cada objeto contiene el identificador y el nombre de la mano de obra.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si el término proporcionado es <code>null</code>, vacío o solo contiene espacios en blanco.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -245,11 +288,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarMaterialAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarMaterialAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L732">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L842">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarMaterialAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarMaterialAsync_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarMaterialAsync(System.String)">BuscarMaterialAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca materiales en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,7 +312,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los materiales. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -283,7 +328,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan los materiales encontrados. Cada objeto contiene el identificador y el nombre del material.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si el término proporcionado es <code>null</code>, vacío o solo contiene espacios en blanco.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -292,11 +354,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarRubrosAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarRubrosAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L120">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L153">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarRubrosAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarRubrosAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_BuscarRubrosAsync_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.BuscarRubrosAsync(System.String)">BuscarRubrosAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca rubros en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -315,7 +378,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los rubros. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +394,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan los rubros encontrados. Cada objeto contiene el identificador y el nombre del rubro.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si el término proporcionado es <code>null</code>, vacío o solo contiene espacios en blanco.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,11 +420,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_CargarDatos_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.CargarDatos(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L21">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L35">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_CargarDatos_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_CargarDatos_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.CargarDatos(System.Int32,System.Int32)">CargarDatos(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga datos de un rubro relacionado con un proyecto específico, incluyendo equipos, mano de obra, categorías y materiales.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,12 +444,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -382,7 +466,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoRubroAPUViewModel.html">APU_ProyectoRubroAPUViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoRubroAPUViewModel.html">APU_ProyectoRubroAPUViewModel</a> que contiene el rubro basandose en un proyecto específico
+y sus detalles asociados, incluyendo equipos, mano de obra, categorías, materiales.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -391,11 +477,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ConsultarRubros(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoRubro%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L48">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L68">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ConsultarRubros_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ConsultarRubros*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ConsultarRubros(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoRubro})">ConsultarRubros(IQueryable&lt;APU_ProyectoRubro&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consultar los datos de los rubros asociados a un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -414,7 +501,9 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a> que se utiliza
+para filtrar los rubros asociados al proyecto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -429,7 +518,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoRubroAPUViewModel.html">APU_ProyectoRubroAPUViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoRubroAPUViewModel.html">APU_ProyectoRubroAPUViewModel</a> que contiene los rubros y sus detalles asociados,
+incluyendo equipos, mano de obra, categorías y materiales.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -438,11 +529,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarEquipoAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarEquipoAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1106">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1294">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarEquipoAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarEquipoAsync_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarEquipoAsync(System.String,System.String,System.String)">EliminarEquipoAsync(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina un equipo asociado a un rubro y un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -461,17 +553,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de proyecto de donde se desean eliminar el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro que se desea eliminar el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo que se desea eliminar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -486,7 +581,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el equipo ha sido eliminado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado de el proyecto no permite la eliminación.</li><li>El identificador de proyecto o rubro es <code>null</code> o vacío.</li><li>No se encuentra el equipo en las tablas correspondientes.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -495,11 +608,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarManoObraAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarManoObraAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1156">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1359">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarManoObraAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarManoObraAsync_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarManoObraAsync(System.String,System.String,System.String)">EliminarManoObraAsync(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina una mano de obra asociada a un rubro y un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -518,17 +632,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de proyecto de donde se desean eliminar el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro que se desea eliminar el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">manoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra que se desea eliminar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -543,7 +660,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que la mano de obra ha sido eliminada correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado de el proyecto no permite la eliminación.</li><li>El identificador de proyecto, rubro, mano de obra es <code>null</code> o vacío.</li><li>No se encuentra la mano de obra en las tablas correspondientes</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -552,11 +687,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarMaterialAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarMaterialAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1205">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1423">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarMaterialAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarMaterialAsync_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarMaterialAsync(System.String,System.String,System.String)">EliminarMaterialAsync(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina un material asociado a un rubro y un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -575,17 +711,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de proyecto de donde se desean eliminar el material</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro que se desea eliminar el material</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">materialId</span></td>
-        <td></td>
+        <td><p>Identificador del material que se desea eliminar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -600,7 +739,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el rubro del proyecto especificada ha sido eliminado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la eliminación.</li><li>El identificador de proyecto o rubro es <code>null</code> o vacío.</li><li>No se encuentra el material en las tablas correspondientes.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -609,11 +766,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarRubroAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarRubroAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L145">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L192">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarRubroAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarRubroAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_EliminarRubroAsync_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.EliminarRubroAsync(System.String,System.String)">EliminarRubroAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consultar y eliminar un rubro incluyendo los detalles de equipo, materiales y manos de obra, de un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -632,12 +790,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de proyecto de donde se desean eliminar el rubro</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro que se desea eliminar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -652,7 +812,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el rubro del proyecto especificado ha sido eliminado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la actualización.</li><li>El identificador de proyecto o rubro es <code>null</code>.</li><li>La consulta realizada no encuentra el proyecto o el rubro con los identificadores especificados.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -661,11 +839,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarEquipoAsync_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarEquipoAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L781">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L918">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarEquipoAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarEquipoAsync_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarEquipoAsync(System.String,System.String,System.String,System.String)">InsertarActualizarEquipoAsync(String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza un equipo asociado a un rubro y a un proyecto específica.
+Si el rubro no tiene un equipo asociado, se crea un nuevo registro en la de tabla RubroEquipo de proyectos</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -684,22 +864,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo el cual se desea insertar o actualizar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Cantidad</span></td>
-        <td></td>
+        <td><p>Nombre del equipo que se desea insertar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -714,7 +898,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el equipo ha sido insertado o actualizado correctamente del rubro y el proyecto especificado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la actualización.</li><li>El identificador de proyecto, rubro o equipo es <code>null</code> o vacío.</li><li>El nombre de equipo, el costo es <code>null</code> o vacío.</li><li>La consulta realizada no encuentra el proyecto, el rubro o el equipo con los identificadores especificados.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -723,11 +925,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarManoObraAsync_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarManoObraAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L892">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1047">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarManoObraAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarManoObraAsync_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarManoObraAsync(System.String,System.String,System.String,System.String)">InsertarActualizarManoObraAsync(String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza una mano de obra asociada a un rubro y a un proyecto específica.
+Si el rubro no tiene una mano de obra asociada, se crea un nuevo registro en la de tabla RubroManoObra de proyecto</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -746,22 +950,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">manoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra el cual se desea insertar o actualizar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Cantidad</span></td>
-        <td></td>
+        <td><p>Nombre de la mano de obra que se desea insertar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -776,7 +984,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que la mano de obra ha sido insertada o actualizada correctamente del rubro y el proyecto especificado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la actualización.</li><li>El identificador de proyecto, rubro o mano de obra es <code>null</code> o vacío.</li><li>El nombre de mano de obra, el costo es <code>null</code> o vacío.</li><li>La consulta realizada no encuentra el proyecto, el rubro o la mano de obra con los identificadores especificados.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -785,11 +1011,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarMaterialAsync_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarMaterialAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L999">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L1172">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarMaterialAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarMaterialAsync_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarMaterialAsync(System.String,System.String,System.String,System.String)">InsertarActualizarMaterialAsync(String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza un material asociado a un rubro y a un proyecto específico.
+Si el rubro no tiene un material asociado, se crea un nuevo registro en la de tabla RubroMaterial de proyectos</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -808,22 +1036,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de el proyecto de el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro el cual se desea obtener información</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">materialId</span></td>
-        <td></td>
+        <td><p>Identificador del material el cual se desea insertar o actualizar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Cantidad</span></td>
-        <td></td>
+        <td><p>Nombre del material que se desea insertar</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -838,7 +1070,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el material ha sido insertado o actualizado correctamente del rubro y el proyecto especificado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la actualización.</li><li>El identificador de proyecto, rubro o material es <code>null</code> o vacío.</li><li>El nombre de material, el costo es <code>null</code> o vacío.</li><li>La consulta realizada no encuentra el proyecto, el rubro o el material con los identificadores especificados.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -847,11 +1097,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarRubroAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarRubroAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L316">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L379">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarRubroAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarRubroAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_InsertarActualizarRubroAsync_System_String_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.InsertarActualizarRubroAsync(System.String,System.String,System.String)">InsertarActualizarRubroAsync(String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza un rubro asociado a un proyecto específico.
+Si el proyecto no tiene un rubro asociado, se crea un nuevo registro en la de tabla Rubro de proyectos</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -870,17 +1122,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a el cual se desea insertar o actualizar el rubro</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro el cual se desea insertar o actualizar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">cantidad</span></td>
-        <td></td>
+        <td><p>Cantidad asociada al rubro que se deesea insertar o actualizar, debe ser mayor que cero</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -895,7 +1150,25 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el rubro ha sido insertado o actualizado correctamente del proyecto especificada.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el estado del proyecto no permite la actualización.</li><li>El identificador de proyecto o rubro es <code>null</code>.</li><li>La cantidad es <code>null</code>.</li><li>La consulta realizada no encuentra el proyecto o el rubro con los identificadores especificados.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -904,11 +1177,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerEquipoAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerEquipoAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L571">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L644">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerEquipoAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerEquipoAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerEquipoAsync(System.Int32,System.Int32,System.Int32)">ObtenerEquipoAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene la información de un equipo asociado a un rubro y a un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -927,17 +1201,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de el cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro del cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_EquipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo del cual se desea obtener la información.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -952,7 +1229,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><p>Un objeto dinámico que contiene la información del equipo</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si alguno de los identificadores es nulo o si el equipo no es encontrado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -961,11 +1255,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerManoObraAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerManoObraAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L617">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L700">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerManoObraAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerManoObraAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerManoObraAsync(System.Int32,System.Int32,System.Int32)">ObtenerManoObraAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene la información de una mano de obra asociada a un rubro y a un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -984,17 +1279,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de el cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro del cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ManoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra de la cual se desea obtener la información.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1009,7 +1307,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><p>Un objeto dinámico que contiene la información de la mano de obra.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si alguno de los identificadores es nulo o si la mano de obra no es encontrada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1018,11 +1333,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerMaterialAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerMaterialAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L663">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L756">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerMaterialAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerMaterialAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerMaterialAsync(System.Int32,System.Int32,System.Int32)">ObtenerMaterialAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene la información de un material asociado a un rubro y a un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1041,17 +1357,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de el cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro del cual se desea obtener la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material del cual se desea obtener la información.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1066,7 +1385,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><p>Un objeto dinámico que contiene la información del material</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si alguno de los identificadores es nulo o si el material no es encontrado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1075,11 +1411,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerRubroAsync_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerRubroAsync(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L73">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L98">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerRubroAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerRubroAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio_ObtenerRubroAsync_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio.ObtenerRubroAsync(System.Int32,System.Int32)">ObtenerRubroAsync(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene un rubro asociado a un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1098,12 +1435,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>El identificador del rubro.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1118,7 +1457,24 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><p>Un objeto dinámico que contiene los detalles del rubro.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanzada si alguno de los IDs es nulo o si no se encuentra el rubro.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1133,7 +1489,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoRubroAPUServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoRubroAPUServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoRubroAPUServicio.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

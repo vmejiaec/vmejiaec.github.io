@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio" class="text-break">Class Apu_Proyecto_OfertaServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de presupuestos de proyectos y ofertas.</p>
+<ul>
+<li>Este servicio ofrece funcionalidades para consulta e inserción de información.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L14">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L17">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio__ctor_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.#ctor(Infrastructure.Data.SiproContext)">Apu_Proyecto_OfertaServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_AgregarDocPresupuesto_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.AgregarDocPresupuesto(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L19">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L35">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_AgregarDocPresupuesto_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.AgregarDocPresupuesto*"></a>
   <h4 id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_AgregarDocPresupuesto_System_Int32_System_String_System_Int32_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.AgregarDocPresupuesto(System.Int32,System.String,System.Int32)">AgregarDocPresupuesto(Int32, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Agrega un documento a un presupuesto específico (proyecto u oferta) y actualiza el nombre asociado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto u oferta al que se le asigna el documento.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tipo</span></td>
-        <td></td>
+        <td><p>El tipo de presupuesto, puede ser &quot;Proyecto&quot; o &quot;Oferta&quot;.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idDoc</span></td>
-        <td></td>
+        <td><p>El identificador del documento que se desea agregar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +207,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el documento ha sido agregado y, si es necesario,
+que el nombre ha sido actualizado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +218,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L99">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L143">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasAsync_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasAsync_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasAsync(System.String,System.String)">BuscarTareasAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas en la base de datos que coincidan con un término específico y tipo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,12 +242,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término de búsqueda que se usará para filtrar las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tipo</span></td>
-        <td></td>
+        <td><p>El tipo de documento relacionado, que puede influir en las advertencias del resultado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -251,7 +264,10 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que contienen información sobre las tareas que coinciden con el término de búsqueda.
+Cada objeto incluye el ID de la tarea, el texto (nombre de la tarea), tipo de contrato, área asociada,
+el identificador del documento y advertencias específicas basadas en el tipo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -260,11 +276,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasNombreAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasNombreAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L62">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L92">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasNombreAsync_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasNombreAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio_BuscarTareasNombreAsync_System_String_System_String_" data-uid="Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio.BuscarTareasNombreAsync(System.String,System.String)">BuscarTareasNombreAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas por nombre que coincidan con un término específico y tipo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,12 +300,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término de búsqueda para las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tipo</span></td>
-        <td></td>
+        <td><p>El tipo de documento asociado, que puede afectar las advertencias en el resultado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,7 +322,10 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que contienen información sobre las tareas que coinciden con el término de búsqueda.
+Cada objeto incluye el id de la tarea, su nombre, tipo de contrato, área asociada,
+el identificador del documento y advertencias específicas según el tipo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,7 +340,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_Apu_Proyecto_OfertaServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.Apu_Proyecto_OfertaServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/Apu_Proyecto_OfertaServicio.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

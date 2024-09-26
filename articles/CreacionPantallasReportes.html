@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Manual para creaci&#243;n pantallas de Reportes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Manual para creaci&#243;n pantallas de Reportes ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="manual-para-creación-pantallas-de-reportes">Manual para creación pantallas de Reportes</h1>
+
+<h2 id="preparación-para-crear-pantallas">Preparación para crear pantallas</h2>
+<p>Para empezar con la creación de las pantallas de Reportes se debe identificar en que área va a estar ubicado para tener un orden con los demás archivos del proyecto y así poder navegar sin complejidad en el proyecto.</p>
+<p>En este caso el área de Reportes será <strong>ADM</strong>.</p>
+<p><img src="../images/WebAreas.png" alt="Imagen de las areas del proyecto Web"></p>
+<h2 id="crear-menú">Crear Menú</h2>
+<p>Para crear el menú se debe dirigir hacia el proyecto <code>XMigracion</code>, dentro de la carpeta <strong>&quot;DATA&quot;</strong> y abrir el archivo <code>ADM_DatosIniciales.yaml</code>.</p>
+<p><img src="../images/Menu/ArchivoDatosIniciales.png" alt="Imagen de la ubicación del archivo DatosIniciales.yaml"></p>
+<p>En este caso al ser parte de <strong>ADM</strong>, se debe navegar dentro de este código hasta encontrar el módulo de administración.</p>
+<p><img src="../images/Menu/MenuAdministracionYaml.png" alt="Imagen del menú de Administracion en el archivo .yaml"></p>
+<p>Aquí se debe implementar el nuevo menú declarando un código, el menú padre, el nombre con el que se va a desplegar esta nueva opción del menú, el área en el que se encuentra el controlador, el controlador y la acción que en la mayoría de los casos la acción es <strong>Index</strong>.</p>
+<p><img src="../images/Menu/MenuReportes.png" alt="Imagen de la creación del nuevo menú Reportes"></p>
+<p>Adicionalmente, se debe asignar un rol al menú creado para que el usuario perteneciente a ese rol pueda visualizarlo. Para esto en el archivo toca colocar el nombre del rol y el codigo del menú creado.</p>
+<p><img src="../images/Menu/AsignarRolReportes.png" alt="Imagen de la asignación del menú Reportes al usuario Admin"></p>
+<p>Para que los cambios sean efectuados se debe ejecutar el proyecto <code>XMigracion</code>.</p>
+<p><img src="../images/Menu/EjecutarXMigracion.png" alt="Imagen de la selección del Proyecto XMigracion para ejecutarlo en Visual Studio"></p>
+<p>Una vez ejecutado el proyecto XMigracion el nuevo menú se reflejará en el rol especificado.</p>
+<p><img src="../images/Menu/VistaMenuReportes.png" alt="Imagen del menú del rol Admin con el nuevo menú de Reportes"></p>
+<h2 id="controlador">Controlador</h2>
+<p>Los controladores son componentes que manejan la lógica de la aplicación. En C#, los controladores reciben las solicitudes del usuario, interactúan con el modelo (que representa los datos y la lógica de negocio) y eligen qué vista renderizar. Se encargan de procesar la entrada del usuario, realizar las operaciones necesarias y devolver una respuesta adecuada, que puede ser una vista o un redireccionamiento.</p>
+<h3 id="crear-controlador">Crear Controlador</h3>
+<p>Dentro del proyecto <code>Web</code>, identificar la carpeta <code>Areas</code>. Aquí se desplegarán todas las áreas del proyecto, para la creación de Reportes se ubicará en el área <strong>ADM</strong>.</p>
+<p><img src="../images/Controlador/CarpetaControllers.png" alt="Imagen de la carpeta Controllers del área ADM"></p>
+<p>Para crear un controlador se debe presionar clic derecho en la carpeta <code>Controllers</code>, desplegar opciones de <strong>“Agregar”</strong> y seleccionar <strong>controlador</strong>.</p>
+<p><img src="../images/Controlador/Paso1ControllerReportes.png" alt="Imagen del paso 1 para la creación del Controller"></p>
+<p>Mantener la opción por defecto <strong>“Controlador de MVC con acciones de lectura o escritura”</strong> y presionar <strong>“Agregar”</strong>.</p>
+<p><img src="../images/Controlador/Paso2ControllerReportes.png" alt="Imagen del paso 2 para la creación del Controller"></p>
+<p>En la siguiente pantalla de igual forma mantener la opción por defecto <strong>“Controlador de MVC con acciones de lectura o escritura”</strong>.</p>
+<p><img src="../images/Controlador/Paso3ControllerReportes.png" alt="Imagen del paso 3 para la creación del Controller"></p>
+<p>Para el nombre del controlador se debe seguir con la nomenclatura utilizada en el resto del proyecto: <code>Area_NombrePantallaController</code> en este caso el nombre sería, <strong>“Adm_ReportesController”</strong>, la primera letra de cada palabra con mayúscula y el resto con minúsculas.</p>
+<p><img src="../images/Controlador/NomenclaturaControllerReportes.png" alt="Imagen de la nomenclatura usada al crear el Controller"></p>
+<p>Una vez creado el controlador, mantener únicamente namespace y la primera clase pública.</p>
+<p><img src="../images/Controlador/ControladorReportesVacio.png" alt="Imagen del controller Reportes vacío"></p>
+<p>Para iniciar con la codificación en el controlador se comienza definiendo el Area del controlador debajo de namespace y declarar SipoContext. El constructor <strong>“Adm_ReportesController”</strong> recibe un parámetro de tipo SiproContext llamado <strong>_db</strong>. Dentro del constructor, el parámetro <strong>_db</strong> se asigna a la variable de instancia <strong>db</strong>. Esto permite que el controlador use <strong>db</strong> para acceder a la base de datos.</p>
+<p><img src="../images/Controlador/DeclararContextController.png" alt="Imagen de la declaración del SiproContext y el área en el controller"></p>
+<h2 id="vistas">Vistas</h2>
+<p>Las vistas en el patrón MVC (Modelo-Vista-Controlador) son responsables de la presentación de la información. En C#, las vistas suelen estar implementadas como archivos .cshtml que utilizan Razor, un motor de plantillas que permite mezclar código C# con HTML. Las vistas reciben datos del controlador y los presentan al usuario, permitiendo la interacción a través de formularios y enlaces.</p>
+<h3 id="crear-vistas">Crear Vistas</h3>
+<p>Para crear las vistas del proyecto se debe desplazarse hasta la carpeta <code>Views</code> dentro del área correspondiente.</p>
+<p><img src="../images/Vista/CarpetaViews.png" alt="Imagen de la carpeta Views"></p>
+<p>Para crear una nueva carpeta se debe presionar clic derecho en la carpeta <code>Views</code>, desplegar las opciones de <strong>“Agregar”</strong> y seleccionar <strong>“Nueva Carpeta”</strong>.</p>
+<p><img src="../images/Vista/NuevaCarpeta.png" alt="Imagen de la creación de una nueva carpeta"></p>
+<p>La nueva carpeta debe tener el mismo nombre que el controlador, quitando la palabra <strong>Controller</strong> y manteniendo la misma nomenclatura.</p>
+<p>La nueva carpeta debe llevar el mismo nombre que el controlador, eliminando la palabra <strong>&quot;Controller&quot;</strong> y manteniendo la misma nomenclatura. Para seguir con la estructura del proyecto, crea una carpeta denominada <strong>“Adm_Reportes”</strong>.</p>
+<p><img src="../images/Vista/CarpetaVistaReportes.png" alt="Imagen de la carpeta Adm_Reportes para la creación de las vistas"></p>
+<p>Una vez creada la carpeta se debe agregar las vistas correspondientes. Para crear una vista se debe presionar clic derecho en la carpeta creada, desplegar las opciones de <strong>“Agregar”</strong> y seleccionar <strong>“Vista”</strong>.</p>
+<p><img src="../images/Vista/Paso1VistaReportes.png" alt="Imagen del paso 1 para la creación de una nueva vista"></p>
+<p>En la siguiente pantalla mantener la opción por defecto <strong>“Vista de Razor: vacía”</strong>, y presionar <strong>Siguiente</strong>.</p>
+<p><img src="../images/Vista/Paso2VistaReportes.png" alt="Imagen del paso 2 para la creación de una nueva vista"></p>
+<p>En la siguiente Pantalla mantener la opción por defecto <strong>“Vista de Razor: vacía”</strong>. En este caso al ser un CRUD son necesarias cuatro pantallas: <strong>Index, Add, Edit, Delete</strong>.</p>
+<p><img src="../images/Vista/Paso3VistaReportes.png" alt="Imagen del paso 3 para la creación de una nueva vista"></p>
+<h4 id="index">Index</h4>
+<h4 id="index-en-el-controlador">Index en el controlador</h4>
+<p>En este caso al ser una pantalla simple no requiere implementar ViewModel o Servicio. Se declara un tipo <code>ActionResult</code> que obtenga datos en forma de lista para mandarlos a la vista.</p>
+<p><img src="../images/Controlador/IndexController.png" alt="Imagen de la función Index en el Controller"></p>
+<h4 id="index-en-la-vista">Index en la vista</h4>
+<p>La construcción de la vista Index se detallará desde el inicio del documento hasta el final de este.</p>
+<p>La directiva <code>@model</code> especifica el tipo de modelo que se va a recibir, en este caso al enviar una lista desde el controlador se debe declara como <code>IEnumerable</code>.</p>
+<p><img src="../images/Vista/DeclaracionModelIndex.png" alt="Imagen de la declaración del Modelo en la vista"></p>
+<p>En el bloque de código <code>@{}</code>, <strong>Layout</strong> se usa para definir el diseño que se va a aplicar en la vista actual.</p>
+<p><strong>ViewBag.Title</strong> es una propiedad utilizada para mostrar el título de la página actual.</p>
+<p><img src="../images/Vista/DeclaracionTituloIndex.png" alt="Imagen de la declaración del diseño y el título que se va a aplicar en la vista"></p>
+<p><img src="../images/Vista/VistaTitulo.png" alt="Imagen del título en la vista"></p>
+<p>Al ser un CRUD esta pantalla debe contar con un botón para agregar un nuevo reporte, este botón se mostrará en la esquina superior derecha.</p>
+<p><img src="../images/Vista/DeclararBotonAdd.png" alt="Imagen del html del botón Add"></p>
+<p><img src="../images/Vista/VistaBotonAdd.png" alt="Imagen del botón Add en la vista"></p>
+<p>Para construir la tabla en donde se visualizará la información obtenida en el controlador, se debe declarar una tabla y un <strong>thead</strong> para los nombres de las columnas.</p>
+<p><img src="../images/Vista/DeclararTablaHead.png" alt="Imagen del html de la cabecera de la tabla"></p>
+<p>Después se debe declarar el <strong>tbody</strong>, dentro de este se necesita de un <strong>foreach</strong> para recorrer cada elemento de la lista proporcionada por el controlador. Adicional a eso se deben implementar los botones de editar y eliminar. Estos deben enviar le <strong>Id</strong> de <code>ADM_Reporte</code> para alimentar a las pantallas de edit y delete.</p>
+<p><img src="../images/Vista/DeclararTablaBody.png" alt="Imagen del html del cuerpo de la tabla"></p>
+<p><img src="../images/Vista/VistaTabla.png" alt="Imagen de la tabla en la vista"></p>
+<h4 id="add">Add</h4>
+<h4 id="add-en-el-controlador">Add en el controlador</h4>
+<p>Esta vista no requiere de información adicional para su funcionamiento, por lo que el método Get únicamente requiere llamar a la vista <strong>Add</strong>.</p>
+<p><img src="../images/Controlador/AddGetController.png" alt="Imagen de la función Get de Add"></p>
+<p>Para el método <strong>Post</strong> es necesario obtener como parámetro a la entidad <code>ADM_Reporte</code> y almacenarlo en la variable <strong>model</strong>.</p>
+<p><img src="../images/Controlador/AddPostController.png" alt="Imagen de la función Post de Add"></p>
+<p>Para un correcto funcionamiento se trabaja con <strong>try catch</strong> para controlar errores. Se remueve un <strong>ModelState</strong> para eliminar errores de validación específicos.</p>
+<p>Se verifica si el modelo es válido mediante <strong>“!ModelState.IsValid”</strong>, caso contrario dispara una excepción.
+Las variables string deben pasar por la funciona <code>QuitarEspaciosExtra</code> para evitar espacios en blanco al inicio, al final y espacios dobles entre palabras, en este caso Nombre y Descripción.</p>
+<p><code>db.Adm_Reporte.Add(model);</code> Agrega el objeto model al contexto de la base de datos y posteriormente guarda los cambios realizados.</p>
+<p><code>TempData</code> envía un mensaje de éxito al finalizar la inserción de datos correctamente y retorna a la pantalla Index.</p>
+<p>Dentro del bloque <strong>catch</strong> se encuentra control de errores con <strong>ModelState.AddModelError</strong> que despliega un mensaje en la parte superior de la pantalla si se lanza una excepción.</p>
+<h4 id="add-en-la-vista">Add en la vista</h4>
+<p>Al igual que la vista Index cuenta con la directiva <code>@model</code> y el bloque <strong>@{}</strong></p>
+<p><img src="../images/Vista/DeclaracionModelAdd.png" alt="Imagen de la declaración del Modelo en la vista"></p>
+<p>Para el diseño de la pantalla se declara un formulario en el que se muestran cajas de texto para escribir la información y enviarlos al controlador.</p>
+<p><img src="../images/Vista/DeclararInputsAdd.png" alt="Imagen del html de los inputs del formulario Add"></p>
+<p>El uso de <code>asp-for</code> es una etiqueta que ayuda a Razor a enlazar el campo de entrada con la propiedad Nombre del modelo <code>ADM-Reporte</code>.</p>
+<p>El botón de <strong>“Cancelar”</strong> requiere de enviar parámetros para regresar al <strong>Index</strong>. En este caso se envía área, controller y action.</p>
+<p><img src="../images/Vista/VistaFormularioAdd.png" alt="Imagen del formulario Add"></p>
+<h4 id="edit">Edit</h4>
+<h4 id="edit-en-el-controlador">Edit en el controlador</h4>
+<p>Para el método Get de la función <strong>Edit</strong>, requiere recibir un parámetro, en este caso <strong>Id</strong>, para recuperar la información del elemento seleccionado y alimentar a la vista.</p>
+<p><img src="../images/Controlador/EditGetController.png" alt="Imagen de la función Get de Edit"></p>
+<p>Para el método <strong>Post</strong> es necesario obtener como parámetro a la entidad <code>ADM_Reporte</code> y almacenarlo en la variable <strong>model</strong>.</p>
+<p><img src="../images/Controlador/EditPostController.png" alt="Imagen de la función Post de Edit"></p>
+<p>Para el método Post se trabaja con <strong>try catch</strong> para controlar errores. Se remueve un <strong>ModelState</strong> para eliminar errores de validación específicos.</p>
+<p>Se verifica si el modelo es válido mediante <strong>“!ModelState.IsValid”</strong>, caso contrario dispara una excepción.</p>
+<p>Las variables string deben pasar por la funciona <code>QuitarEspaciosExtra</code> para evitar espacios en blanco al inicio, al final y espacios dobles entre palabras, en este caso Nombre y Descripción.</p>
+<p><code>db.Adm_Reporte.Update(model)</code>, es necesario utilizar. Update para la función editar para actualizar el objeto model al contexto de la base de datos y posteriormente guarda los cambios realizados.</p>
+<p><code>TempData</code> envía un mensaje de éxito al finalizar la inserción de datos correctamente y retorna a la pantalla Index.</p>
+<p>Dentro del bloque <strong>catch</strong> se encuentra control de errores con <strong>ModelState.AddModelError</strong> que despliega un mensaje en la parte superior de la pantalla si se lanza una excepción.</p>
+<h4 id="edit-en-la-vista">Edit en la vista</h4>
+<p>Al igual que la vista Index cuenta con la directiva <code>@model</code> y el bloque <strong>@{}</strong></p>
+<p><img src="../images/Vista/DeclaracionModelEdit.png" alt="Imagen de la declaración del Modelo en la vista"></p>
+<p>Para el diseño de la pantalla se declara un formulario en el que se muestran cajas de texto para escribir la información y enviarlos al controlador.</p>
+<p><img src="../images/Vista/DeclararInputsEdit.png" alt="Imagen del html de los inputs del formulario Edit"></p>
+<p>El uso de <code>asp-for</code> es una etiqueta que ayuda a Razor a enlazar el campo de entrada con la propiedad Nombre del modelo <code>ADM-Reporte</code>.</p>
+<p>El botón de <strong>“Cancelar”</strong> requiere de enviar parámetros para regresar al <strong>Index</strong>. En este caso se envía área, controller y action.</p>
+<h4 id="delete">Delete</h4>
+<h4 id="delete-en-el-controlador">Delete en el controlador</h4>
+<p>Para el método Get de la función <strong>Delete</strong>, requiere recibir un parámetro, en este caso <strong>Id</strong>, para recuperar la información del elemento seleccionado y alimentar a la vista.</p>
+<p><img src="../images/Controlador/DeleteGetController.png" alt="Imagen de la función Get de Edit"></p>
+<p>Para el método <strong>Post</strong> es necesario obtener como parámetro a la entidad <code>ADM_Reporte</code> y almacenarlo en la variable <strong>model</strong>.</p>
+<p><img src="../images/Controlador/DeletePostController.png" alt="Imagen de la función Post de Edit"></p>
+<p>Para el método Post se trabaja con <strong>try catch</strong> para controlar errores. Se remueve un <strong>ModelState</strong> para eliminar errores de validación específicos.</p>
+<p>Se verifica si el modelo es válido mediante <strong>“!ModelState.IsValid”</strong>, caso contrario dispara una excepción.</p>
+<p>Las variables string deben pasar por la funciona <code>QuitarEspaciosExtra</code> para evitar espacios en blanco al inicio, al final y espacios dobles entre palabras, en este caso Nombre y Descripción.</p>
+<p><code>db.Adm_Reporte.Remove(model)</code>, es necesario utilizar. Remove para la función delete para eliminar el objeto model en el contexto de la base de datos y posteriormente guarda los cambios realizados.</p>
+<p><code>TempData</code> envía un mensaje de éxito al finalizar la inserción de datos correctamente y retorna a la pantalla Index.</p>
+<p>Dentro del bloque <strong>catch</strong> se encuentra control de errores con <strong>ModelState.AddModelError</strong> que despliega un mensaje en la parte superior de la pantalla si se lanza una excepción.</p>
+<h4 id="delete-en-la-vista">Delete en la vista</h4>
+<p>Al igual que la vista Index cuenta con la directiva <code>@model</code> y el bloque <strong>@{}</strong></p>
+<p><img src="../images/Vista/DeclaracionModelDelete.png" alt="Imagen de la declaración del Modelo en la vista"></p>
+<p>Para el diseño de la pantalla se declara un formulario en el que se muestran cajas de texto para escribir la información y enviarlos al controlador.</p>
+<p><img src="../images/Vista/DeclararInputsDelete.png" alt="Imagen del html de los inputs del formulario Edit"></p>
+<p>El uso de <code>asp-for</code> es una etiqueta que ayuda a Razor a enlazar el campo de entrada con la propiedad Nombre del modelo <code>ADM-Reporte</code>.</p>
+<p>La pantalla <strong>Delete</strong> es únicamente informativa, por eso, los inputs tienen la propiedad <code>readonly</code>.</p>
+<p>El botón de <strong>“Cancelar”</strong> requiere de enviar parámetros para regresar al <strong>Index</strong>. En este caso se envía área, controller y action.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/docfx_project/articles/CreacionPantallasReportes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

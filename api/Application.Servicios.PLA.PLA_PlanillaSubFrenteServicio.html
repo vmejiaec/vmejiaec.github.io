@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -117,7 +117,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L20">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio__ctor_" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_PlanillaSubFrenteServicio(SiproContext)</h4>
@@ -151,11 +151,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_ActualizarPublicacionIndiceAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Decimal_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.ActualizarPublicacionIndiceAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L82">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L115">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_ActualizarPublicacionIndiceAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.ActualizarPublicacionIndiceAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_ActualizarPublicacionIndiceAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Decimal_System_String_" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.ActualizarPublicacionIndiceAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal,System.String)">ActualizarPublicacionIndiceAsync(Int32, Int32, Int32, Int32, Int32, Int32, Decimal, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza el índice de publicación para un subfrente específico dentro de un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,42 +175,50 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">periodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">planillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">frenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente .</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">subFrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del subfrente asoc.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">cantTotal</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla para la cual se va a calcular el subtotal.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtCantidad</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla para la cual se va a calcular el subtotal.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,7 +233,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>La cantidad no es un decimal válido o cuando la suma excede la cantidad total permitida.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -233,11 +260,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_CargarDatos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_List_Domain_Entities_PLA_PLA_SubFrente__.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.CargarDatos(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.List%7BDomain.Entities.PLA.PLA_SubFrente%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L21">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaSubFrenteServicio.cs/#L37">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_CargarDatos_" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaSubFrenteServicio_CargarDatos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_List_Domain_Entities_PLA_PLA_SubFrente__" data-uid="Application.Servicios.PLA.PLA_PlanillaSubFrenteServicio.CargarDatos(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.List{Domain.Entities.PLA.PLA_SubFrente})">CargarDatos(Int32, Int32, Int32, Int32, Int32, List&lt;PLA_SubFrente&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calcula el subtotal de una planilla específica para un proyecto dado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,32 +284,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">periodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">planillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">frenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente .</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Domain.Entities.PLA.PLA_SubFrente.html">PLA_SubFrente</a>&gt;</td>
         <td><span class="parametername">subFrentes</span></td>
-        <td></td>
+        <td><p>Lista de SubFrentes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -296,7 +330,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Application.ViewModels.PLA.Pla_PlanillaSubFrenteViewModel.html">Pla_PlanillaSubFrenteViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.PLA.Pla_PlanillaSubFrenteViewModel.html">Pla_PlanillaSubFrenteViewModel</a> que contiene los datos de los sub frentes.</p>
+</td>
       </tr>
     </tbody>
   </table>

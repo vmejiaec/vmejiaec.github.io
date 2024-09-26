@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -709,18 +709,18 @@ public class AccountController : Controller, IActionFilter, IAsyncActionFilter, 
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_SignInManager_Microsoft_AspNetCore_Identity_IdentityUser__Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__Web_Servicios_SesionServicio_Application_Servicios_ADM_IADM_MenuServicio_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.%23ctor(Infrastructure.Data.SiproContext%2CMicrosoft.AspNetCore.Identity.SignInManager%7BMicrosoft.AspNetCore.Identity.IdentityUser%7D%2CMicrosoft.AspNetCore.Identity.UserManager%7BMicrosoft.AspNetCore.Identity.IdentityUser%7D%2CWeb.Servicios.SesionServicio%2CApplication.Servicios.ADM.IADM_MenuServicio)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_SignInManager_Microsoft_AspNetCore_Identity_IdentityUser__Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__Web_Servicios_SesionServicio_Application_Servicios_ADM_IADM_MenuServicio_Application_Servicios_ADM_IADM_EmailServicio_IConfiguration_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.%23ctor(Infrastructure.Data.SiproContext%2CMicrosoft.AspNetCore.Identity.SignInManager%7BMicrosoft.AspNetCore.Identity.IdentityUser%7D%2CMicrosoft.AspNetCore.Identity.UserManager%7BMicrosoft.AspNetCore.Identity.IdentityUser%7D%2CWeb.Servicios.SesionServicio%2CApplication.Servicios.ADM.IADM_MenuServicio%2CApplication.Servicios.ADM.IADM_EmailServicio%2CIConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L23">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L27">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController__ctor_" data-uid="Web.Areas.ADM.Controllers.AccountController.#ctor*"></a>
-  <h4 id="Web_Areas_ADM_Controllers_AccountController__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_SignInManager_Microsoft_AspNetCore_Identity_IdentityUser__Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__Web_Servicios_SesionServicio_Application_Servicios_ADM_IADM_MenuServicio_" data-uid="Web.Areas.ADM.Controllers.AccountController.#ctor(Infrastructure.Data.SiproContext,Microsoft.AspNetCore.Identity.SignInManager{Microsoft.AspNetCore.Identity.IdentityUser},Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},Web.Servicios.SesionServicio,Application.Servicios.ADM.IADM_MenuServicio)">AccountController(SiproContext, SignInManager&lt;IdentityUser&gt;, UserManager&lt;IdentityUser&gt;, SesionServicio, IADM_MenuServicio)</h4>
+  <h4 id="Web_Areas_ADM_Controllers_AccountController__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_SignInManager_Microsoft_AspNetCore_Identity_IdentityUser__Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__Web_Servicios_SesionServicio_Application_Servicios_ADM_IADM_MenuServicio_Application_Servicios_ADM_IADM_EmailServicio_IConfiguration_" data-uid="Web.Areas.ADM.Controllers.AccountController.#ctor(Infrastructure.Data.SiproContext,Microsoft.AspNetCore.Identity.SignInManager{Microsoft.AspNetCore.Identity.IdentityUser},Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},Web.Servicios.SesionServicio,Application.Servicios.ADM.IADM_MenuServicio,Application.Servicios.ADM.IADM_EmailServicio,IConfiguration)">AccountController(SiproContext, SignInManager&lt;IdentityUser&gt;, UserManager&lt;IdentityUser&gt;, SesionServicio, IADM_MenuServicio, IADM_EmailServicio, IConfiguration)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AccountController(SiproContext db, SignInManager&lt;IdentityUser&gt; signInManager, UserManager&lt;IdentityUser&gt; userManager, SesionServicio sesionServicio, IADM_MenuServicio menuServicio)</code></pre>
+    <pre><code class="lang-csharp hljs">public AccountController(SiproContext db, SignInManager&lt;IdentityUser&gt; signInManager, UserManager&lt;IdentityUser&gt; userManager, SesionServicio sesionServicio, IADM_MenuServicio menuServicio, IADM_EmailServicio emailServicio, IConfiguration configuration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -757,6 +757,16 @@ public class AccountController : Controller, IActionFilter, IAsyncActionFilter, 
         <td><span class="parametername">menuServicio</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Application.Servicios.ADM.IADM_EmailServicio.html">IADM_EmailServicio</a></td>
+        <td><span class="parametername">emailServicio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
@@ -766,7 +776,7 @@ public class AccountController : Controller, IActionFilter, IAsyncActionFilter, 
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_ForgotPassword.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.ForgotPassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L177">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L185">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_ForgotPassword_" data-uid="Web.Areas.ADM.Controllers.AccountController.ForgotPassword*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_ForgotPassword" data-uid="Web.Areas.ADM.Controllers.AccountController.ForgotPassword">ForgotPassword()</h4>
@@ -797,7 +807,7 @@ public IActionResult ForgotPassword()</code></pre>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_ForgotPassword_Web_ViewModels_EmailViewModel_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.ForgotPassword(Web.ViewModels.EmailViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L187">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L191">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_ForgotPassword_" data-uid="Web.Areas.ADM.Controllers.AccountController.ForgotPassword*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_ForgotPassword_Web_ViewModels_EmailViewModel_" data-uid="Web.Areas.ADM.Controllers.AccountController.ForgotPassword(Web.ViewModels.EmailViewModel)">ForgotPassword(EmailViewModel)</h4>
@@ -845,7 +855,7 @@ public async Task&lt;IActionResult&gt; ForgotPassword(EmailViewModel modelo)</co
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_Login.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.Login%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L38">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L46">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_Login_" data-uid="Web.Areas.ADM.Controllers.AccountController.Login*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_Login" data-uid="Web.Areas.ADM.Controllers.AccountController.Login">Login()</h4>
@@ -876,7 +886,7 @@ public IActionResult Login()</code></pre>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_Login_Web_ViewModels_LoginViewModel_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.Login(Web.ViewModels.LoginViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L44">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L52">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_Login_" data-uid="Web.Areas.ADM.Controllers.AccountController.Login*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_Login_Web_ViewModels_LoginViewModel_" data-uid="Web.Areas.ADM.Controllers.AccountController.Login(Web.ViewModels.LoginViewModel)">Login(LoginViewModel)</h4>
@@ -924,7 +934,7 @@ public async Task&lt;IActionResult&gt; Login(LoginViewModel model)</code></pre>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_Logout.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.Logout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L102">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L110">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_Logout_" data-uid="Web.Areas.ADM.Controllers.AccountController.Logout*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_Logout" data-uid="Web.Areas.ADM.Controllers.AccountController.Logout">Logout()</h4>
@@ -954,7 +964,7 @@ public async Task&lt;IActionResult&gt; Login(LoginViewModel model)</code></pre>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_Register.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L108">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L116">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_Register_" data-uid="Web.Areas.ADM.Controllers.AccountController.Register*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_Register" data-uid="Web.Areas.ADM.Controllers.AccountController.Register">Register()</h4>
@@ -985,7 +995,7 @@ public IActionResult Register()</code></pre>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_Register_Web_ViewModels_RegisterViewModel_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.Register(Web.ViewModels.RegisterViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L115">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L123">View Source</a>
   </span>
   <a id="Web_Areas_ADM_Controllers_AccountController_Register_" data-uid="Web.Areas.ADM.Controllers.AccountController.Register*"></a>
   <h4 id="Web_Areas_ADM_Controllers_AccountController_Register_Web_ViewModels_RegisterViewModel_" data-uid="Web.Areas.ADM.Controllers.AccountController.Register(Web.ViewModels.RegisterViewModel)">Register(RegisterViewModel)</h4>
@@ -1009,6 +1019,107 @@ public async Task&lt;IActionResult&gt; Register(RegisterViewModel model)</code><
       <tr>
         <td><a class="xref" href="Web.ViewModels.RegisterViewModel.html">RegisterViewModel</a></td>
         <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_ResetPassword_System_String_System_String_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.ResetPassword(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L228">View Source</a>
+  </span>
+  <a id="Web_Areas_ADM_Controllers_AccountController_ResetPassword_" data-uid="Web.Areas.ADM.Controllers.AccountController.ResetPassword*"></a>
+  <h4 id="Web_Areas_ADM_Controllers_AccountController_ResetPassword_System_String_System_String_" data-uid="Web.Areas.ADM.Controllers.AccountController.ResetPassword(System.String,System.String)">ResetPassword(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+public async Task&lt;IActionResult&gt; ResetPassword(string token, string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController_ResetPassword_Web_ViewModels_ResetPassViewModel_.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController.ResetPassword(Web.ViewModels.ResetPassViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L259">View Source</a>
+  </span>
+  <a id="Web_Areas_ADM_Controllers_AccountController_ResetPassword_" data-uid="Web.Areas.ADM.Controllers.AccountController.ResetPassword*"></a>
+  <h4 id="Web_Areas_ADM_Controllers_AccountController_ResetPassword_Web_ViewModels_ResetPassViewModel_" data-uid="Web.Areas.ADM.Controllers.AccountController.ResetPassword(Web.ViewModels.ResetPassViewModel)">ResetPassword(ResetPassViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+public async Task&lt;IActionResult&gt; ResetPassword(ResetPassViewModel modelo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Web.ViewModels.ResetPassViewModel.html">ResetPassViewModel</a></td>
+        <td><span class="parametername">modelo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1052,7 +1163,7 @@ public async Task&lt;IActionResult&gt; Register(RegisterViewModel model)</code><
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Web_Areas_ADM_Controllers_AccountController.md&amp;value=---%0Auid%3A%20Web.Areas.ADM.Controllers.AccountController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Web/Areas/ADM/Controllers/AccountController.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

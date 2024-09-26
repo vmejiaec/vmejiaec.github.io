@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -117,7 +117,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L17">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L21">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio__ctor_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.#ctor(Infrastructure.Data.SiproContext)">APU_CpcProyectoRubroAPUServicio(SiproContext)</h4>
@@ -151,11 +151,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcEquipoAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcEquipoAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L315">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L388">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcEquipoAsync_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcEquipoAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcEquipoAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcEquipoAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de un equipo CPC asociados a un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,32 +175,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a la que pertenece el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">EquipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -214,7 +221,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el equipo con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,11 +231,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcManoObraAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcManoObraAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L353">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L442">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcManoObraAsync_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcManoObraAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcManoObraAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcManoObraAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de una mano de obra CPC asociados a un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,32 +255,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a la que pertenece la mano de obra</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ManoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +301,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que la mano de obra con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -295,11 +311,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcMaterialAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcMaterialAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L391">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L496">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcMaterialAsync_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ActualizarCpcMaterialAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ActualizarCpcMaterialAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcMaterialAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de un material CPC asociados a un proyecto específic.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,32 +335,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a la que pertenece el material</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -358,7 +381,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el material con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,11 +391,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarDatos_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarDatos(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L199">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L256">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarDatos_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarDatos_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarDatos(System.Int32,System.Int32)">CargarDatos(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos detallados de un proyecto y rubro específicos, incluyendo información sobre equipos, mano de obra y materiales.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -390,12 +415,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del Rubro que se desea obtener</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del Rubro que se desea obtener</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -410,7 +437,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUCpcProyecto.APU_CpcProyectoRubroAPUViewModel.html">APU_CpcProyectoRubroAPUViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUCpcProyecto.APU_CpcProyectoRubroAPUViewModel.html">APU_CpcProyectoRubroAPUViewModel</a> que contiene toda la información del proyecto y rubro solicitados,
+incluyendo listas de equipos, materiales, mano de obra, con sus respectivos costos y detalles CPC(Codigo, Nombre, Tipo y Porcentaje)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -419,11 +448,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarEquipos_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarEquipos(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L69">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L94">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarEquipos_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarEquipos*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarEquipos_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarEquipos(System.Int32,System.Int32)">CargarEquipos(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de equipos asociados a un rubro específico de un proyecto. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de los equipos relacionados y consulta información adicional de cada equipo desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -442,12 +473,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -462,7 +495,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroEquipoViewModel.html">APU_CpcProyectoRubroEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroEquipoViewModel.html">APU_CpcProyectoRubroEquipoViewModel</a> que contiene la información detallada de cada equipo asociado
+al rubro especificado. Cada objeto incluye datos como el costo del equipo y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -471,11 +506,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarManosObra_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarManosObra(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L111">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L148">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarManosObra_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarManosObra*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarManosObra_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarManosObra(System.Int32,System.Int32)">CargarManosObra(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de manos de obra asociadas a un rubro específico de un proyecto. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de las manos de obra relacionadas
+y consulta información adicional de cada mano de obra desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -494,12 +532,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -514,7 +554,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroManoObraViewModel.html">APU_CpcProyectoRubroManoObraViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroManoObraViewModel.html">APU_CpcProyectoRubroManoObraViewModel</a> que contiene la información detallada de cada mano de obra asociada
+al rubro especificado. Cada objeto incluye datos como el costo de mano de obra y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -523,11 +565,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarMateriales_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarMateriales(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L155">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L203">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarMateriales_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarMateriales*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_CargarMateriales_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.CargarMateriales(System.Int32,System.Int32)">CargarMateriales(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de materiales asociados a un rubro específico de un proyecto. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de los materiales relacionados
+y consulta información adicional de cada material desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -546,12 +591,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -566,7 +613,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroMaterialViewModel.html">APU_CpcProyectoRubroMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCpc.APU_CpcProyectoRubroMaterialViewModel.html">APU_CpcProyectoRubroMaterialViewModel</a> que contiene la información detallada de cada equipo asociado
+al rubro especificado. Cada objeto incluye datos como el costo del equipo y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -575,11 +624,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ConsultarRubros(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoRubro%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L23">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCProyecto/APU_CpcProyectoRubroAPUServicio.cs/#L38">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ConsultarRubros_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ConsultarRubros*"></a>
   <h4 id="Application_Servicios_APUCPCProyecto_APU_CpcProyectoRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__System_Int32_" data-uid="Application.Servicios.APUCPCProyecto.APU_CpcProyectoRubroAPUServicio.ConsultarRubros(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoRubro},System.Int32)">ConsultarRubros(IQueryable&lt;APU_ProyectoRubro&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información sobre los rubros de un proyecto específica. Obtiene los rubros que corresponden al proyecto dado
+y carga detalles adicionales, como equipos, mano de obra y materiales asociados a cada rubro.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -598,12 +649,15 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a> que se utiliza
+para filtrar los rubros asociados al proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador de proyecto para la cual se desean consultar los rubros.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -618,7 +672,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCpcProyecto.APU_CpcProyectoRubroAPUViewModel.html">APU_CpcProyectoRubroAPUViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCpcProyecto.APU_CpcProyectoRubroAPUViewModel.html">APU_CpcProyectoRubroAPUViewModel</a> que contiene la información detallada
+de los rubros asociados al proyecto especifico.
+Cada objeto en la lista incluye datos del rubro y listas de equipos, mano de obra y materiales relacionados.</p>
+</td>
       </tr>
     </tbody>
   </table>

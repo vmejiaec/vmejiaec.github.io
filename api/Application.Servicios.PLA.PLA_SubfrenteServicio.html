@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_PLA_PLA_SubfrenteServicio" data-uid="Application.Servicios.PLA.PLA_SubfrenteServicio" class="text-break">Class PLA_SubfrenteServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Subfrentes</p>
+<ul>
+<li>Este servicio permite calculas valores necesarios para las pantallas de subfrentes.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_SubfrenteServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_SubfrenteServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L15">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L19">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_SubfrenteServicio__ctor_" data-uid="Application.Servicios.PLA.PLA_SubfrenteServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_PLA_SubfrenteServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.PLA_SubfrenteServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_SubfrenteServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_SubfrenteServicio_CalcularSubtotal_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_SubfrenteServicio.CalcularSubtotal(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L19">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L35">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_SubfrenteServicio_CalcularSubtotal_" data-uid="Application.Servicios.PLA.PLA_SubfrenteServicio.CalcularSubtotal*"></a>
   <h4 id="Application_Servicios_PLA_PLA_SubfrenteServicio_CalcularSubtotal_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.PLA.PLA_SubfrenteServicio.CalcularSubtotal(System.Int32,System.Int32,System.Int32)">CalcularSubtotal(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calcula el subtotal de un subfrente específico dentro de un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece el subfrente.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">frenteId</span></td>
-        <td></td>
+        <td><p>El identificador del frente dentro del proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">subFrenteId</span></td>
-        <td></td>
+        <td><p>El identificador del subfrente dentro del frente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,10 +207,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
-        <td></td>
+        <td><p>El subtotal calculado como un valor decimal.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_PLA_PLA_SubfrenteServicio_CalcularSubtotal_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Este método realiza una consulta a la base de datos para obtener la cantidad y el precio unitario de los rubros
+asociados al subfrente especificado, y luego calcula el subtotal multiplicando la cantidad por el precio unitario.</p>
+</div>
 </article>
           </div>
           
@@ -214,7 +227,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_SubfrenteServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_SubfrenteServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_SubfrenteServicio.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

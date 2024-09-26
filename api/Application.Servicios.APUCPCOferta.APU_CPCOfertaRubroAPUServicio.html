@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio" class="text-break">Class APU_CPCOfertaRubroAPUServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de CPC Oferta.</p>
+<ul>
+<li>Este servicio ofrece varias funcionalidades relacionadas con Cpc de Ofertas</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L20">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio__ctor_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.#ctor(Infrastructure.Data.SiproContext)">APU_CPCOfertaRubroAPUServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcEquipoAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcEquipoAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L330">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L401">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcEquipoAsync_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcEquipoAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcEquipoAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcEquipoAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de un equipo CPC asociados a una oferta específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,32 +179,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la que pertenece el equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">EquipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -214,7 +225,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el equipo con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,11 +235,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcManoObraAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcManoObraAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L368">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L455">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcManoObraAsync_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcManoObraAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcManoObraAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcManoObraAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de una mano de obra CPC asociados a una oferta específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,32 +259,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la que pertenece la mano de obra</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ManoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +305,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que la mano de obra con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -295,11 +315,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcMaterialAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcMaterialAsync(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L406">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L509">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcMaterialAsync_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ActualizarCpcMaterialAsync_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ActualizarCpcMaterialAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcMaterialAsync(Int32, Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y actualiza la información de un material CPC asociados a una oferta específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,32 +339,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la que pertenece el material</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material que se desea actualizar la información.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del material. Si se proporciona un valor, este se actualizará en la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -358,7 +385,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el material con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,11 +395,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarDatos_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarDatos(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L22">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L35">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarDatos_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarDatos_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarDatos(System.Int32,System.Int32)">CargarDatos(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos detallados de una oferta y rubro específicos, incluyendo información sobre equipos, mano de obra y materiales.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -390,12 +419,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto que se desea obtener</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del Rubro que se desea obtener</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -410,7 +441,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CPCOfertaRubroAPUViewModel.html">APU_CPCOfertaRubroAPUViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CPCOfertaRubroAPUViewModel.html">APU_CPCOfertaRubroAPUViewModel</a> que contiene toda la información de la oferta y rubro solicitados,
+incluyendo listas de equipos, materiales, mano de obra, con sus respectivos costos y detalles CPC(Codigo, Nombre, Tipo y Porcentaje)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -419,11 +452,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarEquipos_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarEquipos(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L188">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L222">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarEquipos_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarEquipos*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarEquipos_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarEquipos(System.Int32,System.Int32)">CargarEquipos(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de equipos asociados a un rubro específico de una oferta. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de los equipos relacionados
+y consulta información adicional de cada equipo desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -442,12 +478,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_RubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -462,7 +500,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroEquipoViewModel.html">APU_CpcOfertaRubroEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroEquipoViewModel.html">APU_CpcOfertaRubroEquipoViewModel</a> que contiene la información detallada de cada equipo asociado
+al rubro especificado. Cada objeto incluye datos como el costo del equipo y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -471,11 +511,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarManosObra_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarManosObra(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L232">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L277">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarManosObra_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarManosObra*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarManosObra_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarManosObra(System.Int32,System.Int32)">CargarManosObra(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de manos de obra asociadas a un rubro específico de una oferta. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de las manos de obra relacionadas
+y consulta información adicional de cada mano de obra desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -494,12 +537,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -514,7 +559,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroManoObraViewModel.html">APU_CpcOfertaRubroManoObraViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroManoObraViewModel.html">APU_CpcOfertaRubroManoObraViewModel</a> que contiene la información detallada de cada mano de obra asociada
+al rubro especificado. Cada objeto incluye datos como el costo de mano de obra y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -523,11 +570,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarMateriales_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarMateriales(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L280">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L335">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarMateriales_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarMateriales*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_CargarMateriales_System_Int32_System_Int32_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.CargarMateriales(System.Int32,System.Int32)">CargarMateriales(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información de materiales asociados a un rubro específico de una oferta. Utiliza el servicio &quot;CargaDatos&quot;
+para obtener los detalles del rubro y de los materiales relacionados
+y consulta información adicional de cada material desde la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -546,12 +596,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para consultar los datos relacionados</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">rubroId</span></td>
-        <td></td>
+        <td><p>Identificador del rubro para consultar y enviar al servicio.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -566,7 +618,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroMaterialViewModel.html">APU_CpcOfertaRubroMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CpcOfertaRubroMaterialViewModel.html">APU_CpcOfertaRubroMaterialViewModel</a> que contiene la información detallada de cada equipo asociado
+al rubro especificado. Cada objeto incluye datos como el costo del equipo y detalles adicionales obtenidos de la base de datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -575,11 +629,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUOferta_APU_OfertaRubro__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ConsultarRubros(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaRubro%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L139">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L163">View Source</a>
   </span>
   <a id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ConsultarRubros_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ConsultarRubros*"></a>
   <h4 id="Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio_ConsultarRubros_IQueryable_Domain_Entities_APUOferta_APU_OfertaRubro__System_Int32_" data-uid="Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio.ConsultarRubros(IQueryable{Domain.Entities.APUOferta.APU_OfertaRubro},System.Int32)">ConsultarRubros(IQueryable&lt;APU_OfertaRubro&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Consulta y carga información sobre los rubros de una oferta específica. Obtiene los rubros que corresponden a la oferta dada
+y carga detalles adicionales, como equipos, mano de obra y materiales asociados a cada rubro.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -598,12 +654,15 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUOferta.APU_OfertaRubro.html">APU_OfertaRubro</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUOferta.APU_OfertaRubro.html">APU_OfertaRubro</a> que se utiliza
+para filtrar los rubros asociados a la oferta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para la cual se desean consultar los rubros.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -618,7 +677,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CPCOfertaRubroAPUViewModel.html">APU_CPCOfertaRubroAPUViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUCPCOFR.APU_CPCOfertaRubroAPUViewModel.html">APU_CPCOfertaRubroAPUViewModel</a> que contiene la información detallada
+de los rubros asociados a la oferta especificada.
+Cada objeto en la lista incluye datos del rubro y listas de equipos, mano de obra y materiales relacionados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -633,7 +695,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCPCOferta_APU_CPCOfertaRubroAPUServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCPCOferta.APU_CPCOfertaRubroAPUServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCPCOferta/APU_CPCOfertaRubroAPUServicio.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

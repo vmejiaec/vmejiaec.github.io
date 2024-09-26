@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio" data-uid="Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio" class="text-break">Class PLA_ProyectoFormulaPolServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio Fórmula Polinómica de Pla_Proyecto.</p>
+<ul>
+<li>Este servicio ofrece consulta y carga de datos para proporcionar informacióna a la pantalla de fórmula polinómica</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L12">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L16">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio__ctor_" data-uid="Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_ProyectoFormulaPolServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio_CargarDatos_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.CargarDatos(System.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L17">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L33">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio_CargarDatos_" data-uid="Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio_CargarDatos_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio.CargarDatos(System.Int32,Domain.Entities.APUPres.EstadoPresupuesto)">CargarDatos(Int32, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos del proyecto y su fórmula polinómica de presupuesto en base a un ID de proyecto y un estado específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,12 +179,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PLA_ProyectoId</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto para el cual se desea cargar la fórmula del presupuesto.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoPresupuesto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto que se utilizará para filtrar los resultados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,7 +201,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUPresupuesto.PLA_ProyectoFormulaPolViewModel.html">PLA_ProyectoFormulaPolViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUPresupuesto.PLA_ProyectoFormulaPolViewModel.html">PLA_ProyectoFormulaPolViewModel</a> que contiene los datos del proyecto,
+así como las fórmulas y categorías del presupuesto filtradas por el estado especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +218,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_PLA_ProyectoFormulaPolServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.PLA_ProyectoFormulaPolServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUPresupuesto/PLA_ProyectoFormulaPolServicio.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_POA_POA_CuentaServicio" data-uid="Application.Servicios.POA.POA_CuentaServicio" class="text-break">Class POA_CuentaServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Cuentas de POA</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como inserciones, actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L11">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L15">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_CuentaServicio__ctor_" data-uid="Application.Servicios.POA.POA_CuentaServicio.#ctor*"></a>
   <h4 id="Application_Servicios_POA_POA_CuentaServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.POA.POA_CuentaServicio.#ctor(Infrastructure.Data.SiproContext)">POA_CuentaServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHermana_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHermana(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L57">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L76">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHermana_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHermana*"></a>
   <h4 id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHermana_System_String_System_Int32_System_Int32_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHermana(System.String,System.Int32,System.Int32)">BuscarCuentaHermana(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca la cuenta hermana a partir de una cuenta base, año y nivel especificados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">CuentaBase</span></td>
-        <td></td>
+        <td><p>La cuenta base a partir de la cual se busca la cuenta hermana.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Anio</span></td>
-        <td></td>
+        <td><p>El año para el que se busca la cuenta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Nivel</span></td>
-        <td></td>
+        <td><p>El nivel actual de la cuenta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +207,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>El nuevo string de la cuenta hermana.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +217,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHija_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHija(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L28">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHija_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHija*"></a>
   <h4 id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHija_System_String_System_Int32_System_Int32_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHija(System.String,System.Int32,System.Int32)">BuscarCuentaHija(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca la cuenta hija a partir de una cuenta base, año y nivel especificados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,17 +241,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">CuentaBase</span></td>
-        <td></td>
+        <td><p>La cuenta base a partir de la cual se busca la cuenta hija.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Anio</span></td>
-        <td></td>
+        <td><p>El año para el que se busca la cuenta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Nivel</span></td>
-        <td></td>
+        <td><p>El nivel actual de la cuenta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -256,7 +269,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
+        <td><p>Una tupla que contiene el nuevo string de la cuenta hija y el nuevo nivel.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,11 +279,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHijaBorrado_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHijaBorrado(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L119">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L149">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHijaBorrado_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHijaBorrado*"></a>
   <h4 id="Application_Servicios_POA_POA_CuentaServicio_BuscarCuentaHijaBorrado_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_CuentaServicio.BuscarCuentaHijaBorrado(System.String,System.Int32)">BuscarCuentaHijaBorrado(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca si hay cuentas hijas asociadas a la cuenta especificada.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -288,12 +303,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">CuentaBase</span></td>
-        <td></td>
+        <td><p>La cuenta base a verificar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Anio</span></td>
-        <td></td>
+        <td><p>El año de la cuenta base.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -308,7 +325,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True si no hay cuentas hijas; de lo contrario, false.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -317,11 +335,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio_EliminarCuenta_Domain_Entities_POA_POA_Cta_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio.EliminarCuenta(Domain.Entities.POA.POA_Cta)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L103">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L127">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_CuentaServicio_EliminarCuenta_" data-uid="Application.Servicios.POA.POA_CuentaServicio.EliminarCuenta*"></a>
   <h4 id="Application_Servicios_POA_POA_CuentaServicio_EliminarCuenta_Domain_Entities_POA_POA_Cta_" data-uid="Application.Servicios.POA.POA_CuentaServicio.EliminarCuenta(Domain.Entities.POA.POA_Cta)">EliminarCuenta(POA_Cta)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina una cuenta de la base de datos si no tiene cuentas hijas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,7 +359,8 @@
       <tr>
         <td><a class="xref" href="Domain.Entities.POA.POA_Cta.html">POA_Cta</a></td>
         <td><span class="parametername">delPoa_Cta</span></td>
-        <td></td>
+        <td><p>La cuenta que se desea eliminar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -355,7 +375,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Mensaje de éxito sobre la eliminación de la cuenta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -370,7 +391,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_CuentaServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_CuentaServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_CuentaServicio.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

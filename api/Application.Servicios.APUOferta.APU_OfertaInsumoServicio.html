@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio" class="text-break">Class APU_OfertaInsumoServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Insumos de Ofertas.</p>
+<ul>
+<li>Este servicio cuenta con varias funcionalidades relacionadas con Apu_Oferta, tales como consultas, carga y lectura de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L20">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio__ctor_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.#ctor(Infrastructure.Data.SiproContext)">APU_OfertaInsumoServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_ActualizarIndiceAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.ActualizarIndiceAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L499">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L684">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_ActualizarIndiceAsync_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.ActualizarIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_ActualizarIndiceAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.ActualizarIndiceAsync(System.Int32,System.Int32,System.Int32)">ActualizarIndiceAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza el indice de un material específico en una oferta dada.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta en la que se encuentra el material.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material curo índice se actualizará.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IndiceId</span></td>
-        <td></td>
+        <td><p>Identificador del índice que se le asignará al material.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +207,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el índice del material ha sido actualizado correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +217,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_BuscarIndiceAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.BuscarIndiceAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L473">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L644">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_BuscarIndiceAsync_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.BuscarIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_BuscarIndiceAsync_System_String_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.BuscarIndiceAsync(System.String)">BuscarIndiceAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca índices en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +241,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los índices. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -246,7 +257,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan los índices encontrados. Cada objeto contiene el identificador y el nombre del índice.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,11 +267,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatos_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatos(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L21">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L33">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatos_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatos_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatos(System.Int32)">CargarDatos(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga datos relacionados con una oferta específica, incluyendo equipos, mano de obra, categorías, materiales y sus respectivos indices.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -278,7 +291,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -293,7 +307,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a> que contiene la oferta y sus detalles asociados,
+incluyendo equipos, mano de obra, categorías, materiales y sus índices</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -302,11 +318,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosCategorias_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosCategorias(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L394">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L545">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosCategorias_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosCategorias*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosCategorias_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosCategorias(System.Int32)">CargarDatosCategorias(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene un listado de Categorías de una oferta específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -325,7 +342,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para la cual se desean cargar las categorías</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -340,7 +358,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaCategoriaViewModel.html">APU_OfertaCategoriaViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Un listado de objetos<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaCategoriaViewModel.html">APU_OfertaCategoriaViewModel</a> que contiene la oferta especificada y una lista de categorías
+asociadas a esa oferta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -349,11 +369,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipoIndices_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipoIndices(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L362">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L499">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipoIndices_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipoIndices*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipoIndices_System_Int32_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipoIndices(System.Int32,System.Int32)">CargarDatosEquipoIndices(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar una lista de datos de índices asociados a un equipo específico dentro de una oferta.
+Incluye la información del equipo, los rubros asociados a dicho equipo y los índices del equipo.
+Los resultados se ordenan por el porcentaje en orden descendente.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -372,12 +395,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para la cual se desean cargar los índices del equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo para el cual se desean cargar los índices</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -392,7 +417,10 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaEquipoIndiceViewModel.html">APU_OfertaEquipoIndiceViewModel</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>Un lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a> que contiene los detalles de los indices asociados al equipo
+especificado dentro de la oferta indicada. Cada objeto incluye la información del índice, del equipo y los rubros asociados al equipo
+asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,11 +429,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipos_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipos(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L51">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L68">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipos_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipos*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquipos_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquipos(System.Int32)">CargarDatosEquipos(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de equipos asociados a una oferta específica, incluyendo los rubros y detalles relacionados con cada equipo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -424,7 +453,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -439,7 +469,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaEquipoViewModel.html">APU_OfertaEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaEquipoViewModel.html">APU_OfertaEquipoViewModel</a> que contiene los datos de los equipos asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -448,11 +479,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposConIndices_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposConIndices(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L233">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L326">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposConIndices_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposConIndices*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposConIndices_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposConIndices(System.Int32)">CargarDatosEquiposConIndices(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar la información de los equipos asociados a una oferta específica, incluyendo los índices y rubros relacionados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -471,7 +503,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos de índices de los equipos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -486,24 +519,28 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a> que contiene los detalles de la oferta y una lista de
+equipos asociados, cada equipo incluye los índices y rubros seleccionados.
+asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaEquipo__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposPaginado(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaEquipo%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaEquipo__.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposPaginado(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaEquipo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L65">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L90">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposPaginado_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposPaginado*"></a>
-  <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaEquipo__System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposPaginado(IQueryable{Domain.Entities.APUOferta.APU_OfertaEquipo},System.Int32)">CargarDatosEquiposPaginado(IQueryable&lt;APU_OfertaEquipo&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaEquipo__" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosEquiposPaginado(IQueryable{Domain.Entities.APUOferta.APU_OfertaEquipo})">CargarDatosEquiposPaginado(IQueryable&lt;APU_OfertaEquipo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Cargar los datos de equipos asociados a una oferta específica, incluyendo detalles relacionados con cada equipo, con paginación.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;APU_OfertaEquipoViewModel&gt; CargarDatosEquiposPaginado(IQueryable&lt;APU_OfertaEquipo&gt; query, int APU_OfertaId)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;APU_OfertaEquipoViewModel&gt; CargarDatosEquiposPaginado(IQueryable&lt;APU_OfertaEquipo&gt; query)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -518,12 +555,9 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUOferta.APU_OfertaEquipo.html">APU_OfertaEquipo</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUOferta.APU_OfertaEquipo.html">APU_OfertaEquipo</a> que se utiliza
+para filtrar los equipos asociados a la oferta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -538,7 +572,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaEquipoViewModel.html">APU_OfertaEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaEquipoViewModel.html">APU_OfertaEquipoViewModel</a> que contiene los datos de los equipos asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -547,11 +582,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObra_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObra(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L73">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L105">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObra_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObra*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObra_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObra(System.Int32)">CargarDatosManoObra(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de mano de obra asociados a una oferta específica, incluyendo los rubros y detalles relacionados con cada mano de obra.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -570,7 +606,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -585,7 +622,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaManoObraViewModel.html">APU_OfertaManoObraViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaManoObraViewModel.html">APU_OfertaManoObraViewModel</a> que contiene los datos de las manos de obra asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -594,11 +632,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObraPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaManoObra__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObraPaginado(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaManoObra%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L89">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L130">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObraPaginado_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObraPaginado*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosManoObraPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaManoObra__System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosManoObraPaginado(IQueryable{Domain.Entities.APUOferta.APU_OfertaManoObra},System.Int32)">CargarDatosManoObraPaginado(IQueryable&lt;APU_OfertaManoObra&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de mano de obra asociados a una oferta específica, incluyendo detalles relacionados con cada mano de obra con paginación.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -617,12 +656,15 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUOferta.APU_OfertaManoObra.html">APU_OfertaManoObra</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUOferta.APU_OfertaManoObra.html">APU_OfertaManoObra</a> que se utiliza
+para filtrar los equipos asociados a la oferta.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -637,7 +679,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaManoObraViewModel.html">APU_OfertaManoObraViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaManoObraViewModel.html">APU_OfertaManoObraViewModel</a> que contiene los datos de las manos de obra asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -646,11 +689,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMateriales_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMateriales(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L97">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L145">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMateriales_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMateriales*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMateriales_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMateriales(System.Int32)">CargarDatosMateriales(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a una oferta específica, incluyendo los rubros y detalles relacionados con cada material.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -669,7 +713,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -684,24 +729,26 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a> que contiene los datos de los materiales asociados a una oferta específica.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaMaterial__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMaterialesPaginado(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaMaterial%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaMaterial__.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMaterialesPaginado(IQueryable%7BDomain.Entities.APUOferta.APU_OfertaMaterial%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L112">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L169">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMaterialesPaginado_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMaterialesPaginado*"></a>
-  <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaMaterial__System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMaterialesPaginado(IQueryable{Domain.Entities.APUOferta.APU_OfertaMaterial},System.Int32)">CargarDatosMaterialesPaginado(IQueryable&lt;APU_OfertaMaterial&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUOferta_APU_OfertaMaterial__" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosMaterialesPaginado(IQueryable{Domain.Entities.APUOferta.APU_OfertaMaterial})">CargarDatosMaterialesPaginado(IQueryable&lt;APU_OfertaMaterial&gt;)</h4>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a una oferta específica, incluyendo detalles relacionados con cada material, con paginación.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;APU_OfertaMaterialViewModel&gt; CargarDatosMaterialesPaginado(IQueryable&lt;APU_OfertaMaterial&gt; query, int APU_OfertaId)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;APU_OfertaMaterialViewModel&gt; CargarDatosMaterialesPaginado(IQueryable&lt;APU_OfertaMaterial&gt; query)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -716,12 +763,9 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUOferta.APU_OfertaMaterial.html">APU_OfertaMaterial</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUOferta.APU_OfertaMaterial.html">APU_OfertaMaterial</a> que se utiliza
+para filtrar los equipos asociados a la oferta.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -736,7 +780,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a> que contiene los datos de los materiales asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -745,11 +790,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosSoloMateriales_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosSoloMateriales(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L380">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L524">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosSoloMateriales_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosSoloMateriales*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDatosSoloMateriales_System_Int32_System_String_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDatosSoloMateriales(System.Int32,System.String)">CargarDatosSoloMateriales(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga información de materiales de una oferta específica, ordenados según el criterio de orden proporcionado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -768,12 +814,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta para la cual se desean cargar los materiales</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sortOrder</span></td>
-        <td></td>
+        <td><p>Criterio de ordenación para los materiales.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -788,7 +836,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaInsumoViewModel.html">APU_OfertaInsumoViewModel</a> que contiene la oferta especificada y una lista de materiales
+asociados a esa oferta, se ordena segun el criterio proporcionado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -797,11 +847,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDetailsMaterialesOrdenados_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDetailsMaterialesOrdenados(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L120">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L187">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDetailsMaterialesOrdenados_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDetailsMaterialesOrdenados*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarDetailsMaterialesOrdenados_System_Int32_System_String_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarDetailsMaterialesOrdenados(System.Int32,System.String)">CargarDetailsMaterialesOrdenados(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a una oferta específica, incluyendo los rubros, índices y detalles relacionados con cada material,
+y los ordena segun el criterio especificado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -820,12 +872,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sortOrder</span></td>
-        <td></td>
+        <td><p>Criterio de ordenación para los resultados</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -840,7 +894,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaMaterialViewModel.html">APU_OfertaMaterialViewModel</a> que contiene los detalles de los materiales
+asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -849,11 +905,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceEquipo_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceEquipo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L201">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L286">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceEquipo_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceEquipo*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceEquipo_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceEquipo(System.Int32)">CargarIndiceEquipo(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los índices de equipos asociados a una oferta específica, agrupa los equipos por índice.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -872,7 +929,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos de índices de equipos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -887,7 +945,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaIndiceEquipoViewModel.html">APU_OfertaIndiceEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaIndiceEquipoViewModel.html">APU_OfertaIndiceEquipoViewModel</a> que contiene los índices de equipos agrupados por índice.
+Cada objeto en la lista representa un índice de equipo y contiene una lista de equipos asociados a ese índice.
+asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -896,11 +957,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceMaterial_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceMaterial(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L168">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L244">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceMaterial_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceMaterial*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_CargarIndiceMaterial_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.CargarIndiceMaterial(System.Int32)">CargarIndiceMaterial(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los índices de materiales asociados a una oferta específica, agrupa los materiales por índice.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -919,7 +981,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta de donde se desea obtener los datos de índices de materiales</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -934,7 +997,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaIndiceMaterialViewModel.html">APU_OfertaIndiceMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUOferta.APU_OfertaIndiceMaterialViewModel.html">APU_OfertaIndiceMaterialViewModel</a> que contiene los índices de materiales agrupados por índice.
+Cada objeto en la lista representa un índice de material y contiene una lista de materiales asociados a ese índice.
+asociados a una oferta especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -943,11 +1009,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarActualizarManoObraCategoriaAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarActualizarManoObraCategoriaAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L410">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L574">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarActualizarManoObraCategoriaAsync_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarActualizarManoObraCategoriaAsync*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarActualizarManoObraCategoriaAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarActualizarManoObraCategoriaAsync(System.Int32,System.Int32,System.Int32)">InsertarActualizarManoObraCategoriaAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza la categoría asociada a una mano de obra para una oferta específica.
+Si la oferta no tiene una categoría asociada, se crea un nuevo registro en la de tabla categorías de ofertas</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -966,17 +1034,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la cual se desea agregar o actualizar la categoría</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">manoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de la mano de obra a la cual se le asignará la categoría</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">categoriaId</span></td>
-        <td></td>
+        <td><p>Identificador de la categoría que se asignará a la mano de obra</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -991,7 +1062,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que la categoría ha sido agregada a la mano de obra especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1000,11 +1072,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndice_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndice(System.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L309">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L434">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndice_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndice*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndice_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndice(System.Int32,System.Int32,System.Decimal)">InsertarDetailsEquipoIndice(Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo detalle de índice para todos los equipos asociados a una oferta específica
+Valida la existencia de la oferta, el índice y asegura que los valores proporcionados son válidos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1023,17 +1097,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la que se agregará el índice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">indiceId</span></td>
-        <td></td>
+        <td><p>Identificador de índice que se añadirá a los equipos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">porcentaje</span></td>
-        <td></td>
+        <td><p>Procentaje asociado al índice para los equipos. Debe ser mayor a 0</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1048,7 +1125,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el índice ha sido agregado correctamente a los equipos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1057,11 +1135,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndiceAsync_System_Int32_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndiceAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L260">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L369">View Source</a>
   </span>
   <a id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndiceAsync_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUOferta_APU_OfertaInsumoServicio_InsertarDetailsEquipoIndiceAsync_System_Int32_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.APUOferta.APU_OfertaInsumoServicio.InsertarDetailsEquipoIndiceAsync(System.Int32,System.Int32,System.Int32,System.Decimal)">InsertarDetailsEquipoIndiceAsync(Int32, Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo detalle de índice para un equipo asociado a una oferta específica
+Valida la existencia de la oferta, el índice y asegura que los valores proporcionados son válidos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1080,22 +1160,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ofertaId</span></td>
-        <td></td>
+        <td><p>Identificador de la oferta a la que se agregará el índice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo al que se le asignará el indice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">indiceId</span></td>
-        <td></td>
+        <td><p>Identificador de índice que se añadirá al equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">porcentaje</span></td>
-        <td></td>
+        <td><p>Procentaje asociado al índice para el equipo. Debe ser mayor a 0</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1110,7 +1194,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el índice ha sido agregado correctamente el equipo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1125,7 +1210,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUOferta_APU_OfertaInsumoServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUOferta.APU_OfertaInsumoServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUOferta/APU_OfertaInsumoServicio.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

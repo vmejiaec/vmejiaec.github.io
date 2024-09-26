@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_PLA_PLA_ReajusteServicio" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio" class="text-break">Class PLA_ReajusteServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Pla_Reajuste</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como inserciones, actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L18">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L23">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio__ctor_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_ReajusteServicio(SiproContext)</h4>
@@ -151,11 +155,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionPlanilla_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_DateTime_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionPlanilla(System.Int32%2CSystem.Int32%2CSystem.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L530">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L628">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionPlanilla_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionPlanilla*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionPlanilla_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_DateTime_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionPlanilla(System.Int32,System.Int32,System.Int32,Domain.Entities.APUPres.EstadoPresupuesto,DateTime)">AsignarPublicacionPlanilla(Int32, Int32, Int32, EstadoPresupuesto, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asigna una publicación a una planilla específica, calculando el costo de la mano de obra y actualizando los
+registros correspondientes en la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,27 +180,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IdProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IdPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del periodo de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IdPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla a modificar.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">EstadoProyecto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto del proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">FechaAsignada</span></td>
-        <td></td>
+        <td><p>La fecha en la que se asignará la publicación a la planilla.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +220,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica que la publicación se asignó correctamente a la planilla.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,11 +230,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionProyecto_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_DateTime_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionProyecto(System.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L473">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L561">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionProyecto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionProyecto*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_AsignarPublicacionProyecto_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_DateTime_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.AsignarPublicacionProyecto(System.Int32,Domain.Entities.APUPres.EstadoPresupuesto,DateTime)">AsignarPublicacionProyecto(Int32, EstadoPresupuesto, DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asigna una publicación a un proyecto específico y actualiza los costos y fechas de los índices y categorías.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,17 +254,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IdProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que se le asigna la publicación.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">EstadoProyecto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto del proyecto (Provisional o Definitivo).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">FechaAsignada</span></td>
-        <td></td>
+        <td><p>La fecha a la que se asigna la publicación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -266,7 +282,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -275,11 +292,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_BuscarContratistaNombreAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.BuscarContratistaNombreAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1114">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1327">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_BuscarContratistaNombreAsync_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.BuscarContratistaNombreAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_BuscarContratistaNombreAsync_System_String_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.BuscarContratistaNombreAsync(System.String)">BuscarContratistaNombreAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca contratistas cuyos nombres contentan un término especificado,
+devolviendo una lista de los primeros 10 resultados encontrados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -298,7 +317,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los contratistas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -313,7 +333,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que contienen el identificador y el nombre del contratista.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -322,11 +343,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatos_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatos(System.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L24">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L40">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatos_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatos_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatos(System.Int32,Domain.Entities.APUPres.EstadoPresupuesto)">CargarDatos(Int32, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos de la fórmula polinómica de un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -345,12 +367,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PLA_ProyectoId</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto del cual se cargará la fórmula.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoPresupuesto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto asociado a la fórmula.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -365,7 +389,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLA.PLA_ProyectoFormulaPolinomicaViewModel.html">PLA_ProyectoFormulaPolinomicaViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.PLA.PLA_ProyectoFormulaPolinomicaViewModel.html">PLA_ProyectoFormulaPolinomicaViewModel</a> que contiene los datos de la fórmula polinómica.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -374,11 +399,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosAnticipo_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosAnticipo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L636">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L740">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosAnticipo_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosAnticipo*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosAnticipo_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosAnticipo(System.Int32)">CargarDatosAnticipo(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos de anticipo para un proyecto específico, incluyendo la información de la planilla
+y los anticipos devengados y por devengar.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -397,7 +424,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto del cual se cargarán los datos de anticipo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -412,7 +440,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLA.PLA_ProyectoAnticipoViewModel.html">PLA_ProyectoAnticipoViewModel</a></td>
-        <td></td>
+        <td><p>Un modelo de vista que contiene la información de la planilla y los anticipos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -421,11 +450,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosPlanilla_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosPlanilla(System.Int32%2CSystem.Int32%2CSystem.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L100">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L129">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosPlanilla_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosPlanilla*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosPlanilla_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosPlanilla(System.Int32,System.Int32,System.Int32,Domain.Entities.APUPres.EstadoPresupuesto)">CargarDatosPlanilla(Int32, Int32, Int32, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos de una planilla específica, incluyendo los índices y categorías asociados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -444,22 +474,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PLA_ProyectoId</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PLA_PeriodoId</span></td>
-        <td></td>
+        <td><p>El identificador del período correspondiente a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PLA_PlanillaId</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla que se desea cargar.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoPresupuesto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto asociado a la planilla.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -474,7 +508,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLA.Pla_PlanillaFormulaPnViewModel.html">Pla_PlanillaFormulaPnViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.PLA.Pla_PlanillaFormulaPnViewModel.html">Pla_PlanillaFormulaPnViewModel</a> que contiene los datos de la planilla y sus índices.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -483,11 +518,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosReajustePlanillaViewModel_Domain_Entities_PLA_PLA_Planilla_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosReajustePlanillaViewModel(Domain.Entities.PLA.PLA_Planilla%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L940">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1112">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosReajustePlanillaViewModel_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosReajustePlanillaViewModel*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarDatosReajustePlanillaViewModel_Domain_Entities_PLA_PLA_Planilla_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarDatosReajustePlanillaViewModel(Domain.Entities.PLA.PLA_Planilla,Domain.Entities.APUPres.EstadoPresupuesto)">CargarDatosReajustePlanillaViewModel(PLA_Planilla, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos necesarios para el reajuste de una planilla específica,
+incluyendo la información de la pantalla, las categorías y los índices asociados,
+asi como el monto total de anticipos devengados hasta la fecha.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -506,12 +544,14 @@
       <tr>
         <td><a class="xref" href="Domain.Entities.PLA.PLA_Planilla.html">PLA_Planilla</a></td>
         <td><span class="parametername">planilla</span></td>
-        <td></td>
+        <td><p>La planilla a la que se quiere cargar los datos de reajusta.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoPresupuesto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto que se considera para el reajuste.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -526,7 +566,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLAReajuste.PLA_ReajustePlanillaViewModel.html">PLA_ReajustePlanillaViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.PLAReajuste.PLA_ReajustePlanillaViewModel.html">PLA_ReajustePlanillaViewModel</a> que contiene la información de la planilla,
+las categorías, los índices y los anticipos devengados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -535,11 +577,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarReajustePlanilla_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarReajustePlanilla(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L894">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1057">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarReajustePlanilla_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarReajustePlanilla*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarReajustePlanilla_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarReajustePlanilla(System.Int32)">CargarReajustePlanilla(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos necesarios para el reajuste de una planilla específica, incluyendo
+el proyecto asociado, el porcentaje máximo de incremento de los contratos y
+las planillas del proyecto con sus respectivos reajustes provisionales y definitivos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -558,7 +603,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto cuya planilla se desea cargar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -573,7 +619,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLAReajuste.PLA_PlanillaReajusteViewModel.html">PLA_PlanillaReajusteViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.PLAReajuste.PLA_PlanillaReajusteViewModel.html">PLA_PlanillaReajusteViewModel</a> que contiene la información del proyecto,
+el porcentaje de incremento máximo y los reajuste de la planillas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -582,11 +630,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_CargarSabanaPlanilla_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.CargarSabanaPlanilla(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L842">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L996">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarSabanaPlanilla_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarSabanaPlanilla*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_CargarSabanaPlanilla_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.CargarSabanaPlanilla(System.Int32,System.Int32,System.Int32)">CargarSabanaPlanilla(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos necesarios para la vista de la sabana de la planilla, incluyendo el proyecto,
+el periodo y los rubros asociados. También calcula las deducciones por órdenes de pago anteriores.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -605,17 +655,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del periodo al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla a la que se está cargando.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -630,7 +683,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.PLAReajuste.PLA_PlanillaSabanaViewModel.html">PLA_PlanillaSabanaViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.PLAReajuste.PLA_PlanillaSabanaViewModel.html">PLA_PlanillaSabanaViewModel</a> con los datos de la planilla y deducciones.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -639,11 +693,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPago_System_Int32_System_Int32_System_Int32_System_Decimal_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPago(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L264">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L323">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPago_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPago*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPago_System_Int32_System_Int32_System_Int32_System_Decimal_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPago(System.Int32,System.Int32,System.Int32,System.Decimal,System.Int32)">GenerarOrdenPago(Int32, Int32, Int32, Decimal, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Genera una orden de pago para una planilla específica en un proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -662,27 +717,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que se asigna la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del período de la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla para la que se genera la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">valorReajuste</span></td>
-        <td></td>
+        <td><p>El valor del reajuste que se aplica a la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPersona</span></td>
-        <td></td>
+        <td><p>El identificador de la persona que crea la orden de pago.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -697,7 +757,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -706,11 +767,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPagoAnticipo_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPagoAnticipo(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L149">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L192">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPagoAnticipo_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPagoAnticipo*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarOrdenPagoAnticipo_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarOrdenPagoAnticipo(System.Int32,System.Int32,System.Int32)">GenerarOrdenPagoAnticipo(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Genera una orden de pago de anticipo para un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -729,17 +791,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que se asigna la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idDoc</span></td>
-        <td></td>
+        <td><p>El identificador del documento relacionado con la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PersonaId</span></td>
-        <td></td>
+        <td><p>El identificador de la persona que crea la orden de pago.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -754,7 +819,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -763,11 +829,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajuste_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajuste(System.Int32%2CSystem.Int32%2CSystem.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L338">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L413">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajuste_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajuste*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajuste_System_Int32_System_Int32_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajuste(System.Int32,System.Int32,System.Int32,Domain.Entities.APUPres.EstadoPresupuesto)">GenerarReajuste(Int32, Int32, Int32, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Genera un reajuste para una planilla específica en un proyecto dado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -786,22 +853,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que se le genera el reajuste.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del período correspondiente al reajuste.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla a la que se aplica el reajuste.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoProyecto</span></td>
-        <td></td>
+        <td><p>El estado del presupuesto del proyecto (Provisional o Definitivo).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -816,7 +887,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -825,11 +897,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajusteDefinitivo_System_Int32_System_Int32_System_Decimal_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajusteDefinitivo(System.Int32%2CSystem.Int32%2CSystem.Decimal%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1047">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1248">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajusteDefinitivo_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajusteDefinitivo*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarReajusteDefinitivo_System_Int32_System_Int32_System_Decimal_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarReajusteDefinitivo(System.Int32,System.Int32,System.Decimal,System.Int32)">GenerarReajusteDefinitivo(Int32, Int32, Decimal, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Genera una orden de reajuste definitivo para un proyecto específico, validando previamente la existencia de los contratos,
+fórmulas polinómicas y asegurando que no se hayan generado previamente una orden de este tipo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -848,22 +922,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto para el cual se generará la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idDocumento</span></td>
-        <td></td>
+        <td><p>El identificador del documento asociado a la orden de pago.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">valorReajuste</span></td>
-        <td></td>
+        <td><p>El valor del reajuste definitivo a aplicar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPersona</span></td>
-        <td></td>
+        <td><p>El identificador de la persona que crea la orden de pago.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -878,7 +956,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje confirmando que la orden de pago fue creada correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -887,11 +966,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_GenerarValorAnticipo_System_Int32_System_Decimal_System_Decimal_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.GenerarValorAnticipo(System.Int32%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L718">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L842">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarValorAnticipo_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarValorAnticipo*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_GenerarValorAnticipo_System_Int32_System_Decimal_System_Decimal_System_Int32_System_Int32_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.GenerarValorAnticipo(System.Int32,System.Decimal,System.Decimal,System.Int32,System.Int32)">GenerarValorAnticipo(Int32, Decimal, Decimal, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Genera y asigna el valor de anticipo a una planilla específica de un proyecto,
+calcula el valor de anticipo devengado teniendo en cuenta las planillas anteriores.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -910,27 +991,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">valorAnticipo</span></td>
-        <td></td>
+        <td><p>El valor total de anticipo a asignar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">porcAnticipo</span></td>
-        <td></td>
+        <td><p>El porcentaje del valor total que se considera como anticipo.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla a la que se le generará el anticipo.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del periodo al que pertenece la planilla.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -945,7 +1031,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje indicando que el valor del anticipo se modificó correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -954,11 +1041,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_LiberarIndices_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.LiberarIndices(System.Int32%2CDomain.Entities.APUPres.EstadoPresupuesto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1022">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L1206">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_LiberarIndices_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.LiberarIndices*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_LiberarIndices_System_Int32_Domain_Entities_APUPres_EstadoPresupuesto_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.LiberarIndices(System.Int32,Domain.Entities.APUPres.EstadoPresupuesto)">LiberarIndices(Int32, EstadoPresupuesto)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Libera los índices y categorías de las planillas de un proyecto específico en función del estado del presupuesto.
+Este proceso incluye la eliminación de todos los índices y categorías generados anteriormente.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -977,12 +1066,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto cuyos índices y categorías se van a liberar.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Domain.Entities.APUPres.EstadoPresupuesto.html">EstadoPresupuesto</a></td>
         <td><span class="parametername">estadoProyecto</span></td>
-        <td></td>
+        <td><p>El estado del prespuesto para el cual se van a liberar los índices y categorías.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -997,7 +1088,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje indicando que los índices y categorías han sido liberados correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1006,7 +1098,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoManual_System_Int32_System_Int32_System_Int32_System_Decimal_System_Decimal_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoManual(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal%2CSystem.Decimal%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L771">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L895">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoManual_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoManual*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoManual_System_Int32_System_Int32_System_Int32_System_Decimal_System_Decimal_System_Decimal_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoManual(System.Int32,System.Int32,System.Int32,System.Decimal,System.Decimal,System.Decimal)">ModificarAnticipoManual(Int32, Int32, Int32, Decimal, Decimal, Decimal)</h4>
@@ -1014,7 +1106,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ModificarAnticipoManual(int idProyecto, int idPlanilla, int idPeriodo, decimal porcAnticipo, decimal valorAnticipo, decimal valorLimite)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ModificarAnticipoManual(int idProyecto, int idPlanilla, int idPeriodo, decimal porcAnticipo, decimal valorAnticipo, decimal totalAnticipo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1053,7 +1145,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
-        <td><span class="parametername">valorLimite</span></td>
+        <td><span class="parametername">totalAnticipo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1078,11 +1170,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoMax_System_Int32_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoMax(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L802">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L948">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoMax_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoMax*"></a>
   <h4 id="Application_Servicios_PLA_PLA_ReajusteServicio_ModificarAnticipoMax_System_Int32_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.PLA.PLA_ReajusteServicio.ModificarAnticipoMax(System.Int32,System.Int32,System.Int32,System.Decimal)">ModificarAnticipoMax(Int32, Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Modifica el valor del anticipo de una planilla específica, asegurando que no se exceda el
+valor total de los rubros. Asigna el anticipo restante si es menor que el total de los rubros.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1101,22 +1195,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idProyecto</span></td>
-        <td></td>
+        <td><p>El identificador del proyecto al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPlanilla</span></td>
-        <td></td>
+        <td><p>El identificador de la planilla a la que se le modificará el anticipo.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idPeriodo</span></td>
-        <td></td>
+        <td><p>El identificador del periodo al que pertenece la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">valorAnticipo</span></td>
-        <td></td>
+        <td><p>El valor total del anticipo a considerar para la modificación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1131,7 +1229,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje indicando que el valor del anticipo se modificó correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1146,7 +1245,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_ReajusteServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_ReajusteServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_ReajusteServicio.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

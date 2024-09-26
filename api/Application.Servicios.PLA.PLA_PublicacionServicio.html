@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_PLA_PLA_PublicacionServicio" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio" class="text-break">Class PLA_PublicacionServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de publicación</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como inserciones, actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L19">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L23">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PublicacionServicio__ctor_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PublicacionServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_PublicacionServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionCategoria_System_Int32_System_Int32_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionCategoria(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L80">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L112">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionCategoria_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionCategoria*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionCategoria_System_Int32_System_Int32_System_String_System_String_System_String_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionCategoria(System.Int32,System.Int32,System.String,System.String,System.String)">ActualizarPublicacionCategoria(Int32, Int32, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza una categoría de publicación en la base de datos. Si la categoría no existe, se crea una nueva.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,27 +179,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PublicacionId</span></td>
-        <td></td>
+        <td><p>El identificador de la publicación que se va a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">CategoriaId</span></td>
-        <td></td>
+        <td><p>El identificador de la categoría que se va a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtHora</span></td>
-        <td></td>
+        <td><p>El costo por hora a establecer. Debe ser un decimal.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtDia</span></td>
-        <td></td>
+        <td><p>El costo por día a establecer. Debe ser un decimal.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtdesc</span></td>
-        <td></td>
+        <td><p>La descripción asociada a la categoría. Si está vacía, se asignará una cadena vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +219,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje indicando que la categoría ha sido actualizada.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el costo por hora o por día no es un decimal.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,11 +246,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionIndice_System_Int32_System_Int32_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionIndice(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L27">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L44">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionIndice_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionIndice*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PublicacionServicio_ActualizarPublicacionIndice_System_Int32_System_Int32_System_String_System_String_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.ActualizarPublicacionIndice(System.Int32,System.Int32,System.String,System.String)">ActualizarPublicacionIndice(Int32, Int32, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza un índice de publicación en la base de datos. Si el índice no existe, se crea uno nuevo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,22 +270,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PublicacionId</span></td>
-        <td></td>
+        <td><p>El identificador de la publicación que se va a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IndiceId</span></td>
-        <td></td>
+        <td><p>El identificador del índice que se va a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtvalor</span></td>
-        <td></td>
+        <td><p>El valor del porcentaje a establecer. Debe ser un decimal.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtdesc</span></td>
-        <td></td>
+        <td><p>La descripción asociada al índice. Si está vacía, se asignará una cadena vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -271,7 +304,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje indicando que el índice ha sido actualizado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el valor del porcentaje no es un decimal.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,11 +331,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio_BorrarCategoriaAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio.BorrarCategoriaAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L146">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L188">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PublicacionServicio_BorrarCategoriaAsync_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.BorrarCategoriaAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PublicacionServicio_BorrarCategoriaAsync_System_String_System_String_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.BorrarCategoriaAsync(System.String,System.String)">BorrarCategoriaAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina una categoría de publicación de la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,12 +355,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">publicacionId</span></td>
-        <td></td>
+        <td><p>El identificador de la publicación de la que se eliminará la categoría.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">categoriaId</span></td>
-        <td></td>
+        <td><p>El identificador de la categoría que se va a eliminar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,7 +377,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje indicando que la categoría ha sido eliminada.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si los identificadores son nulos o si la categoría no existe.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -332,11 +404,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio_EliminarIndiceAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio.EliminarIndiceAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L179">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L230">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PublicacionServicio_EliminarIndiceAsync_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.EliminarIndiceAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PublicacionServicio_EliminarIndiceAsync_System_String_System_String_" data-uid="Application.Servicios.PLA.PLA_PublicacionServicio.EliminarIndiceAsync(System.String,System.String)">EliminarIndiceAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina un índice de publicación de la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -355,12 +428,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">publicacionId</span></td>
-        <td></td>
+        <td><p>El identificador de la publicación de la que se eliminará el índice.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">indiceId</span></td>
-        <td></td>
+        <td><p>El identificador del índice que se va a eliminar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -375,7 +450,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje indicando que el índice ha sido eliminado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si los identificadores son nulos o si el índice no existe.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -390,7 +483,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PublicacionServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PublicacionServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PublicacionServicio.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

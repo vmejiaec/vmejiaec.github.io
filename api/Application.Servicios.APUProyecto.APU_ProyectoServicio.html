@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUProyecto_APU_ProyectoServicio" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio" class="text-break">Class APU_ProyectoServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de proyectos.</p>
+<ul>
+<li>Este servicio ofrece funcionalidades para Apu_Proyecto y CPC de proyecto.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L13">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L17">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoServicio__ctor_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.#ctor(Infrastructure.Data.SiproContext)">APU_ProyectoServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoServicio_CargarDatos_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoServicio.CargarDatos(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoRubro%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L18">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L31">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoServicio_CargarDatos_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoServicio_CargarDatos_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoRubro__System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.CargarDatos(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoRubro},System.Int32)">CargarDatos(IQueryable&lt;APU_ProyectoRubro&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene la información de un proyecto específico</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,12 +179,15 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoRubro.html">APU_ProyectoRubro</a> que se utiliza
+para filtrar los rubros asociados al proyecto.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -194,7 +202,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoViewModel.html">APU_ProyectoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoViewModel.html">APU_ProyectoViewModel</a> que contiene el proyecto basandose en un proyecto específico.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,11 +212,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoServicio_CrearCPCAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoServicio.CrearCPCAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L35">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L58">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoServicio_CrearCPCAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.CrearCPCAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoServicio_CrearCPCAsync_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoServicio.CrearCPCAsync(System.Int32)">CrearCPCAsync(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Crea un CPC para un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -226,7 +236,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para la cual se crea el CPC.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -241,7 +252,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el CPC ha sido creado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -256,7 +268,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoServicio.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

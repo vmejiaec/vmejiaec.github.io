@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio" class="text-break">Class Pla_DireccionFiscalizacionServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de dirección de fiscalización</p>
+<ul>
+<li>Este servicio se encarga de consultas y edición de información.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L17">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L21">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio__ctor_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.#ctor(Infrastructure.Data.SiproContext)">Pla_DireccionFiscalizacionServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_BuscarPersonaAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.BuscarPersonaAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L38">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L61">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_BuscarPersonaAsync_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.BuscarPersonaAsync*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_BuscarPersonaAsync_System_String_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.BuscarPersonaAsync(System.String)">BuscarPersonaAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca personas en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +179,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de personas. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,7 +195,24 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan personas encontradas. Cada objeto contiene el identificador y el nombre de la persona.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si el término proporcionado es <code>null</code>, vacío o solo contiene espacios en blanco.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -198,11 +221,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularSubtotal_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularSubtotal(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L81">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L123">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularSubtotal_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularSubtotal*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularSubtotal_System_Int32_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularSubtotal(System.Int32)">CalcularSubtotal(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calcula el subtotal de un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +245,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para el cual se calculará el subtotal.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,7 +261,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
-        <td></td>
+        <td><p>Un valor decimal que representa el subtotal del proyecto</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -245,11 +271,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularTotalPresupuesto_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularTotalPresupuesto(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L120">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L169">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularTotalPresupuesto_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularTotalPresupuesto*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CalcularTotalPresupuesto_System_Int32_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CalcularTotalPresupuesto(System.Int32)">CalcularTotalPresupuesto(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calcula el total del presupuesto para un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,7 +295,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para el cual se calculará el total del presupuesto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -283,7 +311,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
-        <td></td>
+        <td><p>Un valor decimal que representa el total del presupuesto del proyecto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -292,11 +321,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CargarProyectoListaAsync_System_Linq_IQueryable_Domain_Entities_PLA_PLA_Fiscalizador__.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CargarProyectoListaAsync(System.Linq.IQueryable%7BDomain.Entities.PLA.PLA_Fiscalizador%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L22">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L34">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CargarProyectoListaAsync_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CargarProyectoListaAsync*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_CargarProyectoListaAsync_System_Linq_IQueryable_Domain_Entities_PLA_PLA_Fiscalizador__" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.CargarProyectoListaAsync(System.Linq.IQueryable{Domain.Entities.PLA.PLA_Fiscalizador})">CargarProyectoListaAsync(IQueryable&lt;PLA_Fiscalizador&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga una lista de proyectos asociados a los fiscalizadores especificados en la consulta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -315,7 +345,8 @@
       <tr>
         <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="Domain.Entities.PLA.PLA_Fiscalizador.html">PLA_Fiscalizador</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.PLA.PLA_Fiscalizador.html">PLA_Fiscalizador</a> que se utilizará para obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +361,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Application.ViewModels.PLA.Pla_DireccionFiscalizacionViewModel.html">Pla_DireccionFiscalizacionViewModel</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos de tipo <a class="xref" href="Application.ViewModels.PLA.Pla_DireccionFiscalizacionViewModel.html">Pla_DireccionFiscalizacionViewModel</a> que contiene los detalles de los fiscalizadores
+y sus proyectos asociados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,11 +372,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_SwitchDirectorAsync_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.SwitchDirectorAsync(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L62">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L97">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_SwitchDirectorAsync_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.SwitchDirectorAsync*"></a>
   <h4 id="Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio_SwitchDirectorAsync_System_Int32_System_Boolean_" data-uid="Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio.SwitchDirectorAsync(System.Int32,System.Boolean)">SwitchDirectorAsync(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cambia el estado del director para una persona específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -362,12 +396,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PersonaId</span></td>
-        <td></td>
+        <td><p>Identificador de la persona cuyo director se desea actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">Cumple</span></td>
-        <td></td>
+        <td><p>Valor que indica si es director (true) o no (false).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -382,7 +418,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el estado de la persona a sido actualizado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>La persona no se encuentra con el identificador proporcionado.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -397,7 +451,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_Pla_DireccionFiscalizacionServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.Pla_DireccionFiscalizacionServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/Pla_DireccionFiscalizacionServicio.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

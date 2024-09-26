@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_POA_POA_PoaServicio" data-uid="Application.Servicios.POA.POA_PoaServicio" class="text-break">Class POA_PoaServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de POA</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como inserciones, actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L11">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L16">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio__ctor_" data-uid="Application.Servicios.POA.POA_PoaServicio.#ctor*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.POA.POA_PoaServicio.#ctor(Infrastructure.Data.SiproContext)">POA_PoaServicio(SiproContext)</h4>
@@ -151,11 +155,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_ActualizarValorPartidaAsync_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.ActualizarValorPartidaAsync(System.Int32%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L218">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L273">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_ActualizarValorPartidaAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.ActualizarValorPartidaAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_ActualizarValorPartidaAsync_System_Int32_System_String_System_Int32_System_String_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.ActualizarValorPartidaAsync(System.Int32,System.String,System.Int32,System.String,System.Int32,System.String,System.String,System.String,System.Int32)">ActualizarValorPartidaAsync(Int32, String, Int32, String, Int32, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza el valor de una partida en un POA, creando una nueva línea si es necesario,
+y gestiona la creación de documentos de asignación inicial.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,47 +180,56 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">personaId</span></td>
-        <td></td>
+        <td><p>El ID de la persona que realiza la solicitud.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El ID de la línea de POA a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">anio</span></td>
-        <td></td>
+        <td><p>El año del POA.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">cuenta</span></td>
-        <td></td>
+        <td><p>La cuenta del POA.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">tarea</span></td>
-        <td></td>
+        <td><p>El ID de la tarea del POA.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">codigoPartida</span></td>
-        <td></td>
+        <td><p>El código de la partida a asociar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">nombrePartida</span></td>
-        <td></td>
+        <td><p>El nombre de la partida a asociar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">valorInicial</span></td>
-        <td></td>
+        <td><p>El valor inicial de la partida.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">areaId</span></td>
-        <td></td>
+        <td><p>El ID del área que solicita la modificación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -229,7 +244,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -238,11 +254,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_AsignarPartidaAsync_System_Int32_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.AsignarPartidaAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L349">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L509">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_AsignarPartidaAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.AsignarPartidaAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_AsignarPartidaAsync_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.AsignarPartidaAsync(System.Int32,System.String,System.String,System.String,System.Int32)">AsignarPartidaAsync(Int32, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Asigna una partida a un POA existente, validando que la partida y el POA sean válidos,
+y que el movimiento asociado no esté aprobado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -261,27 +279,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">personaId</span></td>
-        <td></td>
+        <td><p>El ID de la persona que realiza la solicitud.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El ID de la línea de POA a actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">codigoPartida</span></td>
-        <td></td>
+        <td><p>El código de la partida a asignar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">nombrePartida</span></td>
-        <td></td>
+        <td><p>El nombre de la partida a asignar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">areaId</span></td>
-        <td></td>
+        <td><p>El ID del área que solicita la asignación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -296,7 +319,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -305,11 +329,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarCuentasAsync_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarCuentasAsync(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L638">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L831">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarCuentasAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarCuentasAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarCuentasAsync_System_Int32_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarCuentasAsync(System.Int32,System.String)">BuscarCuentasAsync(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca cuentas por código en un año específico, devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -328,12 +353,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">anio</span></td>
-        <td></td>
+        <td><p>El año para el que se busca las cuentas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar al inicio del código de las cuentas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -348,7 +375,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de cuentas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -357,11 +385,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarCuentasNombreAsync_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarCuentasNombreAsync(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L612">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L798">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarCuentasNombreAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarCuentasNombreAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarCuentasNombreAsync_System_Int32_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarCuentasNombreAsync(System.Int32,System.String)">BuscarCuentasNombreAsync(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca cuentas por nombre en un año específico, devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -380,12 +409,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">anio</span></td>
-        <td></td>
+        <td><p>El año para el que se busca las cuentas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar dentro del nombre de las cuentas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -400,7 +431,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de cuentas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -409,11 +441,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarPartidasAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarPartidasAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L867">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1127">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarPartidasAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarPartidasAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarPartidasAsync_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarPartidasAsync(System.String)">BuscarPartidasAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca partidas que comienzan con el término especificado, devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -432,7 +465,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los códigos de las partidas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -447,7 +481,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de partidas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -456,11 +491,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarPartidasNombreAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarPartidasNombreAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L845">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1099">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarPartidasNombreAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarPartidasNombreAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarPartidasNombreAsync_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarPartidasNombreAsync(System.String)">BuscarPartidasNombreAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca partidas por nombre, devolviendo un máximo de 10 resultados que contienen el término de búsqueda.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -479,7 +515,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las partidas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -494,7 +531,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de partidas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -503,11 +541,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L686">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L891">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasAsync_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasAsync(System.String)">BuscarTareasAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas por ID, devolviendo un máximo de 10 resultados que comienzan con el término de búsqueda.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -526,7 +565,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los IDs de las tareas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -541,7 +581,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -550,11 +591,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombreAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombreAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L664">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L863">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombreAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombreAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombreAsync_System_String_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombreAsync(System.String)">BuscarTareasNombreAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas por nombre, devolviendo un máximo de 10 resultados que contienen el término de búsqueda.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -573,7 +615,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las tareas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -588,7 +631,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término de búsqueda.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -597,11 +641,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombrePorAreaAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombrePorAreaAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L708">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L920">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombrePorAreaAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombrePorAreaAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasNombrePorAreaAsync_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasNombrePorAreaAsync(System.String,System.Int32)">BuscarTareasNombrePorAreaAsync(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas por nombre en una área específica, devolviendo un máximo de 10 resultados que contienen el término de búsqueda.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -620,12 +665,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">areaId</span></td>
-        <td></td>
+        <td><p>El ID del área para filtrar las tareas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -640,7 +687,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término y área especificados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -649,11 +697,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasPorAreaAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasPorAreaAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L730">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L949">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPorAreaAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPorAreaAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPorAreaAsync_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPorAreaAsync(System.String,System.Int32)">BuscarTareasPorAreaAsync(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas por ID en una área específica, devolviendo un máximo de 10 resultados que comienzan con el término de búsqueda.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -672,12 +721,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los IDs de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">areaId</span></td>
-        <td></td>
+        <td><p>El ID del área para filtrar las tareas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -692,7 +743,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término y área especificados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -701,11 +753,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L775">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1008">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync(System.String,System.Int32)">BuscarTareasPrincipalesAsync(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas principales por ID, omitiendo una tarea específica y devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -724,12 +777,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los IDs de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">filtroid</span></td>
-        <td></td>
+        <td><p>El ID de la tarea a omitir en los resultados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -744,7 +799,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término, excluyendo la tarea especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -753,11 +809,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L822">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1070">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesAsync_System_String_System_Int32_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesAsync(System.String,System.Int32,System.Int32)">BuscarTareasPrincipalesAsync(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas principales por ID en un área específica, omitiendo una tarea específica y devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -776,17 +833,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los IDs de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>El ID del área para filtrar las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idTareaActual</span></td>
-        <td></td>
+        <td><p>El ID de la tarea a omitir en los resultados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -801,7 +861,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término y área especificados, excluyendo la tarea actual.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -810,11 +871,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L752">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L978">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync(System.String,System.Int32)">BuscarTareasPrincipalesNombreAsync(String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas principales por nombre, omitiendo una tarea específica y devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -833,12 +895,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">filtroid</span></td>
-        <td></td>
+        <td><p>El ID de la tarea a omitir en los resultados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -853,7 +917,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término, excluyendo la tarea especificada.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -862,11 +927,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L798">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1039">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_BuscarTareasPrincipalesNombreAsync_System_String_System_Int32_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.BuscarTareasPrincipalesNombreAsync(System.String,System.Int32,System.Int32)">BuscarTareasPrincipalesNombreAsync(String, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca tareas principales por nombre en un área específica, omitiendo una tarea específica y devolviendo un máximo de 10 resultados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -885,17 +951,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>El ID del área para filtrar las tareas.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idTareaActual</span></td>
-        <td></td>
+        <td><p>El ID de la tarea a omitir en los resultados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -910,7 +979,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de tareas que coinciden con el término y área especificados, excluyendo la tarea actual.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -919,11 +989,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_CargarDatos_IQueryable_Domain_Entities_POA_POA_Poa__.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.CargarDatos(IQueryable%7BDomain.Entities.POA.POA_Poa%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L16">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L27">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_CargarDatos_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_CargarDatos_IQueryable_Domain_Entities_POA_POA_Poa__" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatos(IQueryable{Domain.Entities.POA.POA_Poa})">CargarDatos(IQueryable&lt;POA_Poa&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga y devuelve una lista de modelos POA a partir de una consulta de POA.
+Agrupa los resultados por año, cuenta y tarea, y calcula los valores aprobados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -942,7 +1014,8 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.POA.POA_Poa.html">POA_Poa</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Consulta de POA para cargar los datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -957,7 +1030,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a> con los datos cargados.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -966,11 +1040,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_CargarDatosMovimiento_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.CargarDatosMovimiento(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L89">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L118">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_CargarDatosMovimiento_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatosMovimiento*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_CargarDatosMovimiento_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatosMovimiento(System.Int32)">CargarDatosMovimiento(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos de un POA específico junto con su lista de movimientos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -989,7 +1064,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El ID del POA cuyos datos se desean cargar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1004,7 +1080,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Domain.Entities.POA.POA_Poa.html">POA_Poa</a></td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Domain.Entities.POA.POA_Poa.html">POA_Poa</a> que contiene los datos del POA y su lista de movimientos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1013,11 +1090,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_CargarDatosPoa_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.CargarDatosPoa(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L48">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L64">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_CargarDatosPoa_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatosPoa*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_CargarDatosPoa_System_Int32_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarDatosPoa(System.Int32,System.String,System.Int32)">CargarDatosPoa(Int32, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos de un POA específico basado en el año, cuenta y tarea.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1036,17 +1114,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Anio</span></td>
-        <td></td>
+        <td><p>El año del POA a cargar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Cuenta</span></td>
-        <td></td>
+        <td><p>La cuenta del POA a cargar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Tarea</span></td>
-        <td></td>
+        <td><p>El identificador de la tarea del POA a cargar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1061,7 +1142,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.POA.POA_PoaDetalleViewModel.html">POA_PoaDetalleViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.POA.POA_PoaDetalleViewModel.html">POA_PoaDetalleViewModel</a> con los datos del POA.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1070,11 +1152,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_CargarPoa_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.CargarPoa(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L65">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L89">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_CargarPoa_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarPoa*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_CargarPoa_System_Int32_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.CargarPoa(System.Int32,System.String,System.Int32)">CargarPoa(Int32, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los detalles de un POA específico basado en el año, cuenta y tarea.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1093,17 +1176,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Anio</span></td>
-        <td></td>
+        <td><p>El año del POA a cargar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Cuenta</span></td>
-        <td></td>
+        <td><p>La cuenta del POA a cargar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">Tarea</span></td>
-        <td></td>
+        <td><p>El ID de la tarea del POA a cargar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1118,7 +1204,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a> que contiene los detalles del POA.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1127,11 +1214,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_EditarPOA_Application_ViewModels_POA_POA_PoaViewModel_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.EditarPOA(Application.ViewModels.POA.POA_PoaViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L174">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L215">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_EditarPOA_" data-uid="Application.Servicios.POA.POA_PoaServicio.EditarPOA*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_EditarPOA_Application_ViewModels_POA_POA_PoaViewModel_" data-uid="Application.Servicios.POA.POA_PoaServicio.EditarPOA(Application.ViewModels.POA.POA_PoaViewModel)">EditarPOA(POA_PoaViewModel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Edita un POA existente en la base de datos, actualizando sus detalles y los de su tarea y cuenta asociadas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1150,7 +1238,8 @@
       <tr>
         <td><a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a></td>
         <td><span class="parametername">updPoa_Poa</span></td>
-        <td></td>
+        <td><p>El objeto <a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a> que contiene los datos actualizados del POA.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1165,7 +1254,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1174,11 +1264,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_EliminarPartida_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.EliminarPartida(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L579">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L760">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_EliminarPartida_" data-uid="Application.Servicios.POA.POA_PoaServicio.EliminarPartida*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_EliminarPartida_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.EliminarPartida(System.Int32)">EliminarPartida(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Elimina una partida del POA, validando que no esté relacionada con otros movimientos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1197,7 +1288,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El ID de la partida a eliminar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1212,7 +1304,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1221,11 +1314,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_InsertarActualizarPartidaAsync_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.InsertarActualizarPartidaAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L407">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L582">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_InsertarActualizarPartidaAsync_" data-uid="Application.Servicios.POA.POA_PoaServicio.InsertarActualizarPartidaAsync*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_InsertarActualizarPartidaAsync_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.InsertarActualizarPartidaAsync(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">InsertarActualizarPartidaAsync(Int32, String, String, String, String, String, String, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta o actualiza una partida en un POA, validando los campos y creando movimientos asociados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1244,57 +1338,68 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">personaId</span></td>
-        <td></td>
+        <td><p>El ID de la persona que realiza la solicitud.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>El ID de la línea de POA a actualizar. Si es nulo, se crea una nueva línea.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">anio</span></td>
-        <td></td>
+        <td><p>El año de la partida.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">tarea</span></td>
-        <td></td>
+        <td><p>El ID de la tarea asociada.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">cuenta</span></td>
-        <td></td>
+        <td><p>El código de la cuenta asociada.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">codigoPartida</span></td>
-        <td></td>
+        <td><p>El código de la partida a insertar o actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">nombrePartida</span></td>
-        <td></td>
+        <td><p>El nombre de la partida a insertar o actualizar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">descripcion</span></td>
-        <td></td>
+        <td><p>Descripción de la partida.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">valorInicial</span></td>
-        <td></td>
+        <td><p>Valor inicial de la partida.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">estado</span></td>
-        <td></td>
+        <td><p>Estado del movimiento.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">areaId</span></td>
-        <td></td>
+        <td><p>El ID del área que solicita la asignación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1309,7 +1414,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1318,11 +1424,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_InsertarPoa_Application_ViewModels_POA_POA_PoaViewModel_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.InsertarPoa(Application.ViewModels.POA.POA_PoaViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L113">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L148">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_InsertarPoa_" data-uid="Application.Servicios.POA.POA_PoaServicio.InsertarPoa*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_InsertarPoa_Application_ViewModels_POA_POA_PoaViewModel_" data-uid="Application.Servicios.POA.POA_PoaServicio.InsertarPoa(Application.ViewModels.POA.POA_PoaViewModel)">InsertarPoa(POA_PoaViewModel)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo POA en la base de datos después de realizar las validaciones necesarias.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1341,7 +1448,8 @@
       <tr>
         <td><a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a></td>
         <td><span class="parametername">newPoa_Poa</span></td>
-        <td></td>
+        <td><p>El objeto <a class="xref" href="Application.ViewModels.POA.POA_PoaViewModel.html">POA_PoaViewModel</a> que contiene los datos del nuevo POA.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1356,7 +1464,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje que indica el resultado de la operación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1365,11 +1474,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_ObtenerIdPoas_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.ObtenerIdPoas(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L892">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1156">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_ObtenerIdPoas_" data-uid="Application.Servicios.POA.POA_PoaServicio.ObtenerIdPoas*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_ObtenerIdPoas_System_Int32_System_String_System_Int32_" data-uid="Application.Servicios.POA.POA_PoaServicio.ObtenerIdPoas(System.Int32,System.String,System.Int32)">ObtenerIdPoas(Int32, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene los IDs de los POAs que tienen el mismo año, número de cuenta y tarea.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1388,17 +1498,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">anio</span></td>
-        <td></td>
+        <td><p>El año a filtrar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">cuenta</span></td>
-        <td></td>
+        <td><p>El número de cuenta a filtrar.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">tareaId</span></td>
-        <td></td>
+        <td><p>El ID de la tarea a filtrar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1413,7 +1526,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
+        <td><p>Una lista de IDs de POAs que coinciden con los criterios.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1422,11 +1536,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio_ObtenerValoresAprobados_List_System_Int32__.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio.ObtenerValoresAprobados(List%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L902">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L1171">View Source</a>
   </span>
   <a id="Application_Servicios_POA_POA_PoaServicio_ObtenerValoresAprobados_" data-uid="Application.Servicios.POA.POA_PoaServicio.ObtenerValoresAprobados*"></a>
   <h4 id="Application_Servicios_POA_POA_PoaServicio_ObtenerValoresAprobados_List_System_Int32__" data-uid="Application.Servicios.POA.POA_PoaServicio.ObtenerValoresAprobados(List{System.Int32})">ObtenerValoresAprobados(List&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene los valores aprobados para una lista de IDs de POA.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1445,7 +1560,8 @@
       <tr>
         <td><span class="xref">List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">listadoIdPoa</span></td>
-        <td></td>
+        <td><p>Lista de IDs de POA para los cuales se obtendrán los valores.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1460,7 +1576,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Decimal</span>, <span class="xref">System.Decimal</span>, <span class="xref">System.Decimal</span>, <span class="xref">System.Decimal</span>&gt;</td>
-        <td></td>
+        <td><p>Una tupla con los valores: Asignación Inicial, Certificado, Reforma y Saldo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1475,7 +1592,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_POA_POA_PoaServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.POA.POA_PoaServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/POA/POA_PoaServicio.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

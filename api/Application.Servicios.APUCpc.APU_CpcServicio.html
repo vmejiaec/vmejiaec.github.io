@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -117,7 +117,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L18">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L23">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio__ctor_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.#ctor(Infrastructure.Data.SiproContext)">APU_CpcServicio(SiproContext)</h4>
@@ -151,11 +151,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcEquipoAsync_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcEquipoAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L148">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L202">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcEquipoAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcEquipoAsync_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcEquipoAsync(System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcEquipoAsync(Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de un equipo específico en la base de datos, basándose en su identificador, dentro de CPC Proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,27 +175,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">EquipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +215,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el equipo con el identificador proporcionado a sido actualizado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `EquipoId` proporcionado es cero</li><li>El equipo con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,11 +242,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcManoObraAsync_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcManoObraAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L26">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L47">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcManoObraAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcManoObraAsync_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcManoObraAsync(System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcManoObraAsync(Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de una mano de obra específica en la base de datos, basándose en su identificador CPC Proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,27 +266,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ManoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de mano de obra que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC de la mano de obra . Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -276,7 +306,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que la mano de obra con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `ManoObraId` proporcionado es cero</li><li>Si la mano de obra con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -285,11 +333,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcMaterialAsync_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcMaterialAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L270">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L357">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcMaterialAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcMaterialAsync_System_Int32_System_String_System_String_System_String_System_String_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcMaterialAsync(System.Int32,System.String,System.String,System.String,System.String)">ActualizarCpcMaterialAsync(Int32, String, String, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de un material específico en la base de datos, basándose en su identificador, dentro de CPC Proyecto.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,27 +357,32 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -343,7 +397,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el material con el identificador proporcionado a sido actualizado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `MaterialId` proporcionado es cero</li><li>El material con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -352,11 +424,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaEquipoAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaEquipoAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L209">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L280">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaEquipoAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaEquipoAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaEquipoAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaEquipoAsync(System.Int32,System.String,System.String,System.String,System.String,System.Int32)">ActualizarCpcOfertaEquipoAsync(Int32, String, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de un equipo específico en la base de datos, basándose en su identificador, dentro de CPC Oferta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -375,32 +448,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">EquipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del equipo. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de Oferta para encontrar el equipo específico</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -415,7 +494,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el equipo con el identificador proporcionado a sido actualizado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `EquipoId` proporcionado es cero</li><li>El equipo con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -424,11 +521,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaManoObraAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaManoObraAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L87">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L125">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaManoObraAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaManoObraAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaManoObraAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaManoObraAsync(System.Int32,System.String,System.String,System.String,System.String,System.Int32)">ActualizarCpcOfertaManoObraAsync(Int32, String, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de una mano de obra específica en la base de datos, basándose en su identificador, dentro de CPC Oferta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -447,32 +545,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ManoObraId</span></td>
-        <td></td>
+        <td><p>Identificador de mano de obra que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC de la mano de obra . Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC de la mano de obra. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de Oferta para encontrar la mano de obra específica</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -487,7 +591,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que la mano de obra con el identificador proporcionado a sido actualizada correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `ManoObraId` proporcionado es cero</li><li>Si la mano de obra con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -496,11 +618,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaMaterialAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaMaterialAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L311">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUCpc/APU_CpcServicio.cs/#L416">View Source</a>
   </span>
   <a id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaMaterialAsync_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaMaterialAsync*"></a>
   <h4 id="Application_Servicios_APUCpc_APU_CpcServicio_ActualizarCpcOfertaMaterialAsync_System_Int32_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Application.Servicios.APUCpc.APU_CpcServicio.ActualizarCpcOfertaMaterialAsync(System.Int32,System.String,System.String,System.String,System.String,System.Int32)">ActualizarCpcOfertaMaterialAsync(Int32, String, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza o inserta la información de un material específico en la base de datos, basándose en su identificador, dentro de CPC oferta.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -519,32 +642,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material que se desea actualizar o insertar</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Codigo</span></td>
-        <td></td>
+        <td><p>Código CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Nombre</span></td>
-        <td></td>
+        <td><p>Nombre CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Tipo</span></td>
-        <td></td>
+        <td><p>Tipo CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Porc</span></td>
-        <td></td>
+        <td><p>Porcentaje CPC del material. Si se proporciona un valor, este se actualizará en la base de datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OfertaId</span></td>
-        <td></td>
+        <td><p>Identificador de Oferta para encontrar el material específico</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -559,7 +688,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el material con el identificador proporcionado a sido actualizado correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>Lanza una excepción si el identificador `MaterialId` proporcionado es cero</li><li>El material con el identificador proporcionado no se encuentra</li><li>El valor proporcionado para el porcentaje no es un número decimal valido.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>

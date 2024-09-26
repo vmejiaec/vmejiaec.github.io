@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Manual para creaci&#243;n de entidades </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Manual para creaci&#243;n de entidades ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="manual-para-creación-de-entidades">Manual para creación de entidades</h1>
+
+<p>Para crear y gestionar tablas en la base de datos mediante el uso de entidades en C#, seguimos un proceso estructurado que involucra la definición de la entidad, la configuración de la misma, y la aplicación de migraciones. A continuación, se describen los pasos en detalle.</p>
+<h2 id="definición-de-la-entidad">Definición de la Entidad</h2>
+<p>El primer paso es definir la clase que representará la entidad. Esta clase se mapea a una tabla en la base de datos y sus propiedades se corresponden con las columnas de esa tabla.
+Crea una nueva clase en el espacio de nombres correspondiente e implementar la interfaz <code>IEntity</code>.
+El nombre de la entidad debe empezar con el área al que corresponde: en este caso ADM_.</p>
+<p>Definición de entidad ADM_Reporte:</p>
+<p><img src="../images//ADM/ADM_Reporte.png" alt="Imagen de entidad ADM_Reporte"></p>
+<p>Definición de entidad ADM_ReportePieFirma:</p>
+<p><img src="../images//ADM/ADM_ReportePieFirma.png" alt="Imagen de entidad ADM_ReportePieFirma"></p>
+<h2 id="configuración-de-la-entidad">Configuración de la Entidad</h2>
+<p>Después de definir la entidad, el siguiente paso es configurarla. Esta configuración incluye definir claves primarias, claves foráneas y relaciones entre entidades. Esto se realiza en una clase que implementa <code>IEntityTypeConfiguration&lt;T&gt;</code> (<strong>T</strong> en este caso debe ser <strong>ADM_Reporte</strong>).</p>
+<p>Esta clase debe tener el mismo nombre que la entidad, pero terminando con <strong>Db</strong>.</p>
+<p>Configuración de entidad <strong>ADM_Reporte</strong> mediante clase <strong>ADM_ReporteDb</strong>:</p>
+<p><img src="../images//ADM/ADM_ReporteDb.png" alt="Imagen de entidad ADM_ReporteDb"></p>
+<p>Configuración de entidad <strong>ADM_ReportePieFirma</strong> mediante clase <strong>ADM_ReportePieFirmaDb</strong>:</p>
+<p><img src="../images//ADM/ADM_ReportePieFirmaDb.png" alt="Imagen de entidad ADM_ReportePieFirmaDb"></p>
+<p>Dentro del método Configure puedes definir propiedades de la entidad. Esto incluye el tipo de dato y longitud.</p>
+<p>La clave primaria es el identificador único de la entidad. Puedes definirla utilizando el método <strong>HasKey</strong>.</p>
+<p>Si la entidad tiene relaciones con otras entidades, debes configurar las claves foráneas. Esto se hace utilizando métodos como: <strong>HasOne</strong> y <strong>WithMany</strong> para definir relaciones uno a uno o uno a muchos.</p>
+<h2 id="registro-de-configuraciones-en-el-contexto">Registro de Configuraciones en el Contexto</h2>
+<p>Se definen múltiples propiedades de tipo <code>DbSet&lt;T&gt;</code>. Cada DbSet representa una tabla en la base de datos y permite realizar operaciones de CRUD (Crear, Leer, Actualizar y Eliminar) sobre las entidades que representan.</p>
+<p><img src="../images//ADM/SiproContext.png" alt="Imagen de la Clase SiproContext para aplicar la configuración de las clases Db"></p>
+<p>El método <strong>ADM_Modelo</strong> se encarga de aplicar las configuraciones específicas para las entidades del área <strong>(ADM)</strong>. Este método se invoca dentro del método <code>OnModelCreating</code>, donde se define la estructura del modelo de datos.</p>
+<h2 id="generación-y-aplicación-de-migraciones">Generación y Aplicación de Migraciones</h2>
+<p>Después de definir y configurar las entidades, generas una migración usando <code>Add-Migration</code> y aplicas los cambios a la base de datos con <code>Update-Database</code>.</p>
+<p><img src="../images//ADM//EjecutarMigracion.png" alt="Imagen de ejecución de Migración"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/docfx_project/articles/CreacionEntidades.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

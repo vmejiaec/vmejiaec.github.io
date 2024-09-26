@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio" class="text-break">Class CON_Previo_DocHabilitanteServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio para documentos habilitantes de CONPrevio.</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L15">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L19">View Source</a>
   </span>
   <a id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio__ctor_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.#ctor*"></a>
   <h4 id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.#ctor(Infrastructure.Data.SiproContext)">CON_Previo_DocHabilitanteServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_ActualizarObservacionAsync_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.ActualizarObservacionAsync(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L23">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L40">View Source</a>
   </span>
   <a id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_ActualizarObservacionAsync_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.ActualizarObservacionAsync*"></a>
   <h4 id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_ActualizarObservacionAsync_System_Int32_System_Int32_System_String_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.ActualizarObservacionAsync(System.Int32,System.Int32,System.String)">ActualizarObservacionAsync(Int32, Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza las observaciones de un documento habilitante asociado a una orden de pago en específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OrdenPagoId</span></td>
-        <td></td>
+        <td><p>Identificador de la orden de pago asociada al documento habilitante.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">DocHabilitanteId</span></td>
-        <td></td>
+        <td><p>Identificador del documento habilitante.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtObservacion</span></td>
-        <td></td>
+        <td><p>Observación del documento habilitante que se desea editar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +207,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que la observación fue actualizada correctamente.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No se encuentra la orden de pago.</li><li>El documento habilitante no se encuentra asociado a la orden de pago.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +234,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_SwitchEstadoAsync_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.SwitchEstadoAsync(System.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L52">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L81">View Source</a>
   </span>
   <a id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_SwitchEstadoAsync_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.SwitchEstadoAsync*"></a>
   <h4 id="Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio_SwitchEstadoAsync_System_Int32_System_Int32_System_Boolean_" data-uid="Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio.SwitchEstadoAsync(System.Int32,System.Int32,System.Boolean)">SwitchEstadoAsync(Int32, Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cambia el estado de cumplimiento de una orden de pago asociada a un documento habilitante.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,17 +258,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">OrdenPagoId</span></td>
-        <td></td>
+        <td><p>Identificador de la orden de pago asociada al documento habilitante.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">DocHabilitanteId</span></td>
-        <td></td>
+        <td><p>Identificador del documento habilitante.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">cumple</span></td>
-        <td></td>
+        <td><p>Valor que indica si el contrato cumple (true) o no (false).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -256,7 +286,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el estado fue actualizado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>El documento habilitante no se encuentra asociado a la orden de pago.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -271,7 +319,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_CONPrevio_CON_Previo_DocHabilitanteServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.CONPrevio.CON_Previo_DocHabilitanteServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/CONPrevio/CON_Previo_DocHabilitanteServicio.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

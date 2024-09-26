@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,12 @@
   
   <h1 id="Application_Servicios_ADM_ADM_PersonaServicio" data-uid="Application.Servicios.ADM.ADM_PersonaServicio" class="text-break">Class ADM_PersonaServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Personas/Usuarios de administración.</p>
+<ul>
+<li>Se encarga de obtener la información general del usuario.</li>
+<li>Se obtiene el usuario a través del contexto de ASP NET.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -110,22 +115,25 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ADM_PersonaServicio</code></pre>
   </div>
+  <h5 id="Application_Servicios_ADM_ADM_PersonaServicio_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>La clase se utiliza para obtener información del Usuario.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio.%23ctor(Infrastructure.Data.SiproContext%2CMicrosoft.AspNetCore.Identity.UserManager%7BMicrosoft.AspNetCore.Identity.IdentityUser%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L13">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L21">View Source</a>
   </span>
   <a id="Application_Servicios_ADM_ADM_PersonaServicio__ctor_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.#ctor*"></a>
-  <h4 id="Application_Servicios_ADM_ADM_PersonaServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.#ctor(Infrastructure.Data.SiproContext)">ADM_PersonaServicio(SiproContext)</h4>
+  <h4 id="Application_Servicios_ADM_ADM_PersonaServicio__ctor_Infrastructure_Data_SiproContext_Microsoft_AspNetCore_Identity_UserManager_Microsoft_AspNetCore_Identity_IdentityUser__" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.#ctor(Infrastructure.Data.SiproContext,Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser})">ADM_PersonaServicio(SiproContext, UserManager&lt;IdentityUser&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ADM_PersonaServicio(SiproContext db)</code></pre>
+    <pre><code class="lang-csharp hljs">public ADM_PersonaServicio(SiproContext db, UserManager&lt;IdentityUser&gt; userManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -142,20 +150,73 @@
         <td><span class="parametername">db</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.UserManager</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityUser</span>&gt;</td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio_ActualizarInformacionPersona_Application_ViewModels_ADM_ADM_PersonaViewModel_.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio.ActualizarInformacionPersona(Application.ViewModels.ADM.ADM_PersonaViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L94">View Source</a>
+  </span>
+  <a id="Application_Servicios_ADM_ADM_PersonaServicio_ActualizarInformacionPersona_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.ActualizarInformacionPersona*"></a>
+  <h4 id="Application_Servicios_ADM_ADM_PersonaServicio_ActualizarInformacionPersona_Application_ViewModels_ADM_ADM_PersonaViewModel_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.ActualizarInformacionPersona(Application.ViewModels.ADM.ADM_PersonaViewModel)">ActualizarInformacionPersona(ADM_PersonaViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;string&gt; ActualizarInformacionPersona(ADM_PersonaViewModel modelo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Application.ViewModels.ADM.ADM_PersonaViewModel.html">ADM_PersonaViewModel</a></td>
+        <td><span class="parametername">modelo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaById_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaById(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L43">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L68">View Source</a>
   </span>
   <a id="Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaById_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaById*"></a>
   <h4 id="Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaById_System_Int32_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaById(System.Int32)">GetPersonaById(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene información de la persona.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +235,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">personaId</span></td>
-        <td></td>
+        <td><p>Id persona de ADM_Persona</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,7 +251,9 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Application.ViewModels.ADM.ADM_PersonaViewModel.html">ADM_PersonaViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.ADM.ADM_PersonaViewModel.html">ADM_PersonaViewModel</a> que representa la persona asociada al usuario.
+Si no se encuentra una persona con el identificador del usuario proporcionado, se devuelve <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -198,11 +262,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaByUserId_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaByUserId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L18">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L35">View Source</a>
   </span>
   <a id="Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaByUserId_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaByUserId*"></a>
   <h4 id="Application_Servicios_ADM_ADM_PersonaServicio_GetPersonaByUserId_System_String_" data-uid="Application.Servicios.ADM.ADM_PersonaServicio.GetPersonaByUserId(System.String)">GetPersonaByUserId(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene información de la persona asociada al usuario.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +286,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">userId</span></td>
-        <td></td>
+        <td><p>Id de Uusario de ASP NET</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,7 +302,9 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Application.ViewModels.ADM.ADM_PersonaViewModel.html">ADM_PersonaViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.ADM.ADM_PersonaViewModel.html">ADM_PersonaViewModel</a> que representa la persona asociada al usuario.
+Si no se encuentra una persona con el identificador del usuario proporcionado, se devuelve <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -251,7 +319,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_ADM_ADM_PersonaServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.ADM.ADM_PersonaServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/ADM/ADM_PersonaServicio.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

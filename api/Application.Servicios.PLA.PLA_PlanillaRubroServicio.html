@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio" class="text-break">Class PLA_PlanillaRubroServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de planilla rubro</p>
+<ul>
+<li>Este servicio se encarga de consultar y actualizar información de planilla rubro.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L15">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L19">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio__ctor_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.#ctor*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.#ctor(Infrastructure.Data.SiproContext)">PLA_PlanillaRubroServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarCantidadAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarCantidadAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L52">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L89">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarCantidadAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarCantidadAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarCantidadAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarCantidadAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Decimal)">ActualizarCantidadAsync(Int32, Int32, Int32, Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza la cantidad de un rubro asociado a una planilla específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,32 +179,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PresupuestoId</span></td>
-        <td></td>
+        <td><p>Identificador del prespupuesto al que pertene la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PeriodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PlanillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">FrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">RubroId</span></td>
-        <td></td>
+        <td><p>Identificar del rubro asociado a la planilla</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">cantidad</span></td>
-        <td></td>
+        <td><p>Valor de la nueva cantidad a actualizar en el rubro, en una planilla específica.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -214,7 +225,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje confirmando la actualización de la observación.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No mensaje confirmando la actualización de la cantidad.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,11 +252,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionConAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionConAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L81">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L136">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionConAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionConAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionConAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionConAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">ActualizarObservacionConAsync(Int32, Int32, Int32, Int32, Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualizar observación de un rubro en una planilla específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,32 +276,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PresupuestoId</span></td>
-        <td></td>
+        <td><p>Identificador del prespupuesto al que pertene la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PeriodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PlanillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">FrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">RubroId</span></td>
-        <td></td>
+        <td><p>Identificar del rubro asociado a la planilla</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtObservacionCon</span></td>
-        <td></td>
+        <td><p>Texto de la nueva observación.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +322,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje confirmando la actualización de la observación.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No se encuentra el índice o el proyecto.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -295,11 +349,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionFisAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionFisAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L23">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L42">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionFisAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionFisAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_ActualizarObservacionFisAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.ActualizarObservacionFisAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">ActualizarObservacionFisAsync(Int32, Int32, Int32, Int32, Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualizar observación fiscal de un rubro en una planilla específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,32 +373,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PresupuestoId</span></td>
-        <td></td>
+        <td><p>Identificador del prespupuesto al que pertene la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PeriodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PlanillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">FrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">RubroId</span></td>
-        <td></td>
+        <td><p>Identificar del rubro asociado a la planilla</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">txtObservacionFis</span></td>
-        <td></td>
+        <td><p>Texto de la nueva observación fiscal.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -358,7 +419,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje confirmando la actualización de la observación.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No se encuentra el índice o el proyecto.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -367,11 +446,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoConAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoConAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L133">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L224">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoConAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoConAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoConAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoConAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">SwitchEstadoConAsync(Int32, Int32, Int32, Int32, Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cambia el estado de un rubro en una planilla específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -390,32 +470,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PresupuestoId</span></td>
-        <td></td>
+        <td><p>Identificador del prespupuesto al que pertene la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PeriodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PlanillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">FrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">RubroId</span></td>
-        <td></td>
+        <td><p>Identificar del rubro asociado a la planilla</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">EstadoCon</span></td>
-        <td></td>
+        <td><p>Nuevo estado a establecer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -430,7 +516,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje confirmando la actualización del estado.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No se encuentra el rubro.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -439,11 +543,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoFisAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoFisAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L110">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L183">View Source</a>
   </span>
   <a id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoFisAsync_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoFisAsync*"></a>
   <h4 id="Application_Servicios_PLA_PLA_PlanillaRubroServicio_SwitchEstadoFisAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Application.Servicios.PLA.PLA_PlanillaRubroServicio.SwitchEstadoFisAsync(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">SwitchEstadoFisAsync(Int32, Int32, Int32, Int32, Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cambia el estado fiscal de un rubro en una planilla específica.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -462,32 +567,38 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PresupuestoId</span></td>
-        <td></td>
+        <td><p>Identificador del prespupuesto al que pertene la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PeriodoId</span></td>
-        <td></td>
+        <td><p>Identificador del periodo asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">PlanillaId</span></td>
-        <td></td>
+        <td><p>Identificador de la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">FrenteId</span></td>
-        <td></td>
+        <td><p>Identificador del frente asociado a la planilla.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">RubroId</span></td>
-        <td></td>
+        <td><p>Identificar del rubro asociado a la planilla</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">EstadoFis</span></td>
-        <td></td>
+        <td><p>Nuevo estado fiscal a establecer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -502,7 +613,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje confirmando la actualización del estado fiscal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Lanza una excepción si:</p>
+<ul><li>No se encuentra el rubro.</li></ul>
+</td>
       </tr>
     </tbody>
   </table>
@@ -517,7 +646,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_PLA_PLA_PlanillaRubroServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.PLA.PLA_PlanillaRubroServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/PLA/PLA_PlanillaRubroServicio.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

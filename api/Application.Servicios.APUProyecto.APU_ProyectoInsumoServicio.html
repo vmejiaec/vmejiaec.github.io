@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio" class="text-break">Class APU_ProyectoInsumoServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Insumos de Proyecto.</p>
+<ul>
+<li>Este servicio cuenta con varias funcionalidades relacionadas con Apu_Proyecto, tales como consultas, carga y lectura de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L18">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L21">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio__ctor_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.#ctor*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.#ctor(Infrastructure.Data.SiproContext)">APU_ProyectoInsumoServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_ActualizarIndiceAsync_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.ActualizarIndiceAsync(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L334">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L465">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_ActualizarIndiceAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.ActualizarIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_ActualizarIndiceAsync_System_Int32_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.ActualizarIndiceAsync(System.Int32,System.Int32,System.Int32)">ActualizarIndiceAsync(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Actualiza el indice de un material específico en un proyecto dado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,17 +179,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto en la que se encuentra el material.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">MaterialId</span></td>
-        <td></td>
+        <td><p>Identificador del material curo índice se actualizará.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">IndiceId</span></td>
-        <td></td>
+        <td><p>Identificador del índice que se le asignará al material.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -199,7 +207,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación indicando que el índice del material ha sido actualizado correctamente.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,11 +217,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_BuscarIndiceAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.BuscarIndiceAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L308">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L425">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_BuscarIndiceAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.BuscarIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_BuscarIndiceAsync_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.BuscarIndiceAsync(System.String)">BuscarIndiceAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca índices en la base de datos que contengan el término especificado en su nombre.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +241,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término a buscar en los nombres de los índices. Debe ser una cadena no nula ni vacía.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -246,7 +257,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos dinámicos que representan los índices encontrados. Cada objeto contiene el identificador y el nombre del índice.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,11 +267,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatos_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatos(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L239">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L332">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatos_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatos_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatos(System.Int32)">CargarDatos(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga datos relacionados con un proyecto específico, incluyendo equipos, mano de obra, categorías, materiales y sus respectivos indices.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -278,7 +291,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -293,7 +307,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a> que contiene el proyecto y sus detalles asociados,
+incluyendo equipos, mano de obra, categorías, materiales y sus índices</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -302,11 +318,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosCategorias_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosCategorias(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L84">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L126">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosCategorias_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosCategorias*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosCategorias_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosCategorias(System.Int32)">CargarDatosCategorias(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtiene un listado de Categorías de un proyecto específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -325,7 +342,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para el cual se desean cargar las categorías</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -340,7 +358,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoCategoriaViewModel.html">APU_ProyectoCategoriaViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Un listado de objetos<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoCategoriaViewModel.html">APU_ProyectoCategoriaViewModel</a> que contiene el proyecto especificado y una lista de categorías
+asociadas a ese proyecto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -349,11 +369,14 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipoIndices_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipoIndices(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L49">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L76">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipoIndices_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipoIndices*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipoIndices_System_Int32_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipoIndices(System.Int32,System.Int32)">CargarDatosEquipoIndices(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar una lista de datos de índices asociados a un equipo específico dentro de un proyecto.
+Incluye la información del equipo, los rubros asociados a dicho equipo y los índices del equipo.
+Los resultados se ordenan por el porcentaje en orden descendente.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -372,12 +395,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para el cual se desean cargar los índices del equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo para el cual se desean cargar los índices</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -392,7 +417,10 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoIndiceViewModel.html">APU_ProyectoEquipoIndiceViewModel</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>Un lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoIndiceViewModel.html">APU_ProyectoEquipoIndiceViewModel</a> que contiene los detalles de los indices asociados al equipo
+especificado dentro del proyecto indicado. Cada objeto incluye la información del índice, del equipo y los rubros asociados al equipo
+asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,11 +429,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipos_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipos(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L26">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L33">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipos_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipos*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquipos_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquipos(System.Int32)">CargarDatosEquipos(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de equipos asociados a un proyecto específico, incluyendo los rubros y detalles relacionados con cada equipo.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -424,7 +453,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -439,7 +469,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoViewModel.html">APU_ProyectoEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoViewModel.html">APU_ProyectoEquipoViewModel</a> que contiene los datos de los equipos asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -448,11 +479,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposConIndices_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposConIndices(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L268">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L369">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposConIndices_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposConIndices*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposConIndices_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposConIndices(System.Int32)">CargarDatosEquiposConIndices(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar la información de los equipos asociados a un proyecto específico, incluyendo los índices y rubros relacionados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -471,7 +503,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos de índices de los equipos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -486,24 +519,28 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a> que contiene los detalles del proyecto y una lista de
+equipos asociados, cada equipo incluye los índices y rubros seleccionados.
+asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoEquipo__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposPaginado(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoEquipo%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoEquipo__.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposPaginado(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoEquipo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L41">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L56">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposPaginado_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposPaginado*"></a>
-  <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoEquipo__System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposPaginado(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoEquipo},System.Int32)">CargarDatosEquiposPaginado(IQueryable&lt;APU_ProyectoEquipo&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosEquiposPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoEquipo__" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosEquiposPaginado(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoEquipo})">CargarDatosEquiposPaginado(IQueryable&lt;APU_ProyectoEquipo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Cargar los datos de equipos asociados a un proyecto específico, incluyendo detalles relacionados con cada equipo, con paginación.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;APU_ProyectoEquipoViewModel&gt; CargarDatosEquiposPaginado(IQueryable&lt;APU_ProyectoEquipo&gt; query, int APU_ProyectoId)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;APU_ProyectoEquipoViewModel&gt; CargarDatosEquiposPaginado(IQueryable&lt;APU_ProyectoEquipo&gt; query)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -518,12 +555,9 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoEquipo.html">APU_ProyectoEquipo</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoEquipo.html">APU_ProyectoEquipo</a> que se utiliza
+para filtrar los equipos asociados al proyecto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -538,7 +572,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoViewModel.html">APU_ProyectoEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoEquipoViewModel.html">APU_ProyectoEquipoViewModel</a> que contiene los datos de los equipos asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -547,11 +582,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosManoObra_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosManoObra(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L67">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L101">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosManoObra_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosManoObra*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosManoObra_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosManoObra(System.Int32)">CargarDatosManoObra(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de mano de obra asociados a un proyecto específico, incluyendo los rubros y detalles relacionados con cada mano de obra.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -570,7 +606,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -585,7 +622,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoManoObraViewModel.html">APU_ProyectoManoObraViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoManoObraViewModel.html">APU_ProyectoManoObraViewModel</a> que contiene los datos de las manos de obra asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -594,11 +632,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMateriales_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMateriales(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L98">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L147">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMateriales_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMateriales*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMateriales_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMateriales(System.Int32)">CargarDatosMateriales(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a un proyecto específico, incluyendo los rubros y detalles relacionados con cada material.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -617,7 +656,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -632,24 +672,26 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a> que contiene los datos de los materiales asociados a un proyecto específico.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoMaterial__System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMaterialesPaginado(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoMaterial%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoMaterial__.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMaterialesPaginado(IQueryable%7BDomain.Entities.APUProyecto.APU_ProyectoMaterial%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L117">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L174">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMaterialesPaginado_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMaterialesPaginado*"></a>
-  <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoMaterial__System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMaterialesPaginado(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoMaterial},System.Int32)">CargarDatosMaterialesPaginado(IQueryable&lt;APU_ProyectoMaterial&gt;, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosMaterialesPaginado_IQueryable_Domain_Entities_APUProyecto_APU_ProyectoMaterial__" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosMaterialesPaginado(IQueryable{Domain.Entities.APUProyecto.APU_ProyectoMaterial})">CargarDatosMaterialesPaginado(IQueryable&lt;APU_ProyectoMaterial&gt;)</h4>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a un proyecto específico, incluyendo detalles relacionados con cada material, con paginación.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;APU_ProyectoMaterialViewModel&gt; CargarDatosMaterialesPaginado(IQueryable&lt;APU_ProyectoMaterial&gt; query, int APU_ProyectoId)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;APU_ProyectoMaterialViewModel&gt; CargarDatosMaterialesPaginado(IQueryable&lt;APU_ProyectoMaterial&gt; query)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -664,12 +706,9 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoMaterial.html">APU_ProyectoMaterial</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Una consulta IQueryable de tipo <a class="xref" href="Domain.Entities.APUProyecto.APU_ProyectoMaterial.html">APU_ProyectoMaterial</a> que se utiliza
+para filtrar los equipos asociados al proyecto.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -684,7 +723,8 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a> que contiene los datos de los materiales asociados a un proyecto específico.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -693,11 +733,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosSoloMateriales_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosSoloMateriales(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L293">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L402">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosSoloMateriales_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosSoloMateriales*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDatosSoloMateriales_System_Int32_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDatosSoloMateriales(System.Int32,System.String)">CargarDatosSoloMateriales(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga información de materiales de un proyecto específico, ordenados según el criterio de orden proporcionado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -716,12 +757,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto para el cual se desean cargar los materiales</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sortOrder</span></td>
-        <td></td>
+        <td><p>Criterio de ordenación para los materiales.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -736,7 +779,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto de tipo<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoInsumoViewModel.html">APU_ProyectoInsumoViewModel</a> que contiene el proyecto especificado y una lista de materiales
+asociados al proyecto, se ordena segun el criterio proporcionado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -745,11 +790,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDetailsMaterialesOrdenados_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDetailsMaterialesOrdenados(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L125">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L192">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDetailsMaterialesOrdenados_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDetailsMaterialesOrdenados*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarDetailsMaterialesOrdenados_System_Int32_System_String_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarDetailsMaterialesOrdenados(System.Int32,System.String)">CargarDetailsMaterialesOrdenados(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los datos de materiales asociados a un proyecto específico, incluyendo los rubros, índices y detalles relacionados con cada material,
+y los ordena segun el criterio especificado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -768,12 +815,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">sortOrder</span></td>
-        <td></td>
+        <td><p>Criterio de ordenación para los resultados</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -788,7 +837,9 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoMaterialViewModel.html">APU_ProyectoMaterialViewModel</a> que contiene los detalles de los materiales
+asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -797,11 +848,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceEquipo_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceEquipo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L208">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L293">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceEquipo_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceEquipo*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceEquipo_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceEquipo(System.Int32)">CargarIndiceEquipo(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los índices de equipos asociados a un proyecto específico, agrupa los equipos por índice.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -820,7 +872,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos de índices de equipos</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -835,7 +888,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoIndiceEquipoViewModel.html">APU_ProyectoIndiceEquipoViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoIndiceEquipoViewModel.html">APU_ProyectoIndiceEquipoViewModel</a> que contiene los índices de equipos agrupados por índice.
+Cada objeto en la lista representa un índice de equipo y contiene una lista de equipos asociados a ese índice.
+asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -844,11 +900,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceMaterial_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceMaterial(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L174">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L250">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceMaterial_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceMaterial*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_CargarIndiceMaterial_System_Int32_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.CargarIndiceMaterial(System.Int32)">CargarIndiceMaterial(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Cargar los índices de materiales asociados a un proyecto específico, agrupa los materiales por índice.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -867,7 +924,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">APU_ProyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto de donde se desea obtener los datos de índices de materiales</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -882,7 +940,10 @@
     <tbody>
       <tr>
         <td><span class="xref">List</span>&lt;<a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoIndiceMaterialViewModel.html">APU_ProyectoIndiceMaterialViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos de tipo <a class="xref" href="Application.ViewModels.APUProyecto.APU_ProyectoIndiceMaterialViewModel.html">APU_ProyectoIndiceMaterialViewModel</a> que contiene los índices de materiales agrupados por índice.
+Cada objeto en la lista representa un índice de material y contiene una lista de materiales asociados a ese índice.
+asociados a un proyecto especificado.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -891,11 +952,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndice_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndice(System.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L418">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L581">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndice_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndice*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndice_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndice(System.Int32,System.Int32,System.Decimal)">InsertarDetailsEquipoIndice(Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo detalle de índice para todos los equipos asociados a un proyecto específico
+Valida la existencia del proyecto, el índice y asegura que los valores proporcionados son válidos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -914,17 +977,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a la que se agregará el índice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">indiceId</span></td>
-        <td></td>
+        <td><p>Identificador de índice que se añadirá a los equipos</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">porcentaje</span></td>
-        <td></td>
+        <td><p>Procentaje asociado al índice para los equipos. Debe ser mayor a 0</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -939,7 +1005,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el índice ha sido agregado correctamente a los equipos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -948,11 +1015,13 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndiceAsync_System_Int32_System_Int32_System_Int32_System_Decimal_.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndiceAsync(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L369">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L516">View Source</a>
   </span>
   <a id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndiceAsync_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndiceAsync*"></a>
   <h4 id="Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio_InsertarDetailsEquipoIndiceAsync_System_Int32_System_Int32_System_Int32_System_Decimal_" data-uid="Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio.InsertarDetailsEquipoIndiceAsync(System.Int32,System.Int32,System.Int32,System.Decimal)">InsertarDetailsEquipoIndiceAsync(Int32, Int32, Int32, Decimal)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo detalle de índice para un equipo asociado a un proyecto específico.
+Valida la existencia del proyecto, el índice y asegura que los valores proporcionados son válidos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -971,22 +1040,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">proyectoId</span></td>
-        <td></td>
+        <td><p>Identificador del proyecto a la que se agregará el índice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">equipoId</span></td>
-        <td></td>
+        <td><p>Identificador del equipo al que se le asignará el indice</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">indiceId</span></td>
-        <td></td>
+        <td><p>Identificador de índice que se añadirá al equipo</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Decimal</span></td>
         <td><span class="parametername">porcentaje</span></td>
-        <td></td>
+        <td><p>Procentaje asociado al índice para el equipo. Debe ser mayor a 0</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1001,7 +1074,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el índice ha sido agregado correctamente el equipo.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1016,7 +1090,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_APUProyecto_APU_ProyectoInsumoServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.APUProyecto.APU_ProyectoInsumoServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/APUProyecto/APU_ProyectoInsumoServicio.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

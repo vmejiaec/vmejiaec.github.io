@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/LogoIcon.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,11 @@
   
   <h1 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio" class="text-break">Class JUR_DocAdjudicadoServicio
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Clase para el servicio de Documentos Adjudicados</p>
+<ul>
+<li>Este servicio ofrece funcionalidades tales como inserciones, actualización y consulta de datos.</li>
+</ul>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -117,7 +121,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio__ctor_Infrastructure_Data_SiproContext_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.%23ctor(Infrastructure.Data.SiproContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L15">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L19">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio__ctor_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.#ctor*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio__ctor_Infrastructure_Data_SiproContext_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.#ctor(Infrastructure.Data.SiproContext)">JUR_DocAdjudicadoServicio(SiproContext)</h4>
@@ -151,11 +155,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_BuscarPersonasNombreAsync_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.BuscarPersonasNombreAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L217">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L279">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_BuscarPersonasNombreAsync_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.BuscarPersonasNombreAsync*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_BuscarPersonasNombreAsync_System_String_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.BuscarPersonasNombreAsync(System.String)">BuscarPersonasNombreAsync(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Busca personas cuyo nombre contenga el término especificado.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +179,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">termino</span></td>
-        <td></td>
+        <td><p>El término de búsqueda que se usará para filtrar los nombres de las personas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,20 +195,28 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
-        <td></td>
+        <td><p>Una lista de objetos dinámicos que contienen el ID y el nombre de las personas que coinciden con el término.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_BuscarPersonasNombreAsync_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul>
+<li>Este método limita el resultado a un máximo de 10 coincidencias.</li>
+<li>Los resultados se ordenan alfabéticamente por el nombre de las personas.</li>
+</ul>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatos_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatos(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L63">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L98">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatos_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatos*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatos_System_Int32_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatos(System.Int32)">CargarDatos(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga los datos necesarios para crear un modelo de certificación de un documento específico.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +235,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">idDoc</span></td>
-        <td></td>
+        <td><p>El ID del documento para el cual se van a cargar los datos.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,20 +251,27 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Application.ViewModels.POA.POA_CertificacionViewModel.html">POA_CertificacionViewModel</a></td>
-        <td></td>
+        <td><p>Un objeto <a class="xref" href="Application.ViewModels.POA.POA_CertificacionViewModel.html">POA_CertificacionViewModel</a> que contiene todos los detalles del documento, así como información relacionada.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatos_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Este método realiza varias consultas a la base de datos para obtener información relevante del documento,
+sus movimientos, y tareas asociadas. Los resultados se organizan en un modelo que se utiliza para la vista.
+Se incluye la validación de los movimientos y se suman los valores relevantes.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatosLista_IQueryable_Domain_Entities_POA_POA_Doc__.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatosLista(IQueryable%7BDomain.Entities.POA.POA_Doc%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L20">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L34">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatosLista_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatosLista*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatosLista_IQueryable_Domain_Entities_POA_POA_Doc__" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.CargarDatosLista(IQueryable{Domain.Entities.POA.POA_Doc})">CargarDatosLista(IQueryable&lt;POA_Doc&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Carga una lista de documentos base y sus datos asociados.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -268,7 +290,8 @@
       <tr>
         <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="Domain.Entities.POA.POA_Doc.html">POA_Doc</a>&gt;</td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>Consulta que contiene los documentos a cargar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -283,20 +306,27 @@
     <tbody>
       <tr>
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Application.ViewModels.POA.POA_DocBaseViewModel.html">POA_DocBaseViewModel</a>&gt;</td>
-        <td></td>
+        <td><p>Una colección de objetos <a class="xref" href="Application.ViewModels.POA.POA_DocBaseViewModel.html">POA_DocBaseViewModel</a> que representan los documentos y sus datos asociados.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_CargarDatosLista_IQueryable_Domain_Entities_POA_POA_Doc___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Este método consulta los documentos a partir de la consulta proporcionada y crea una lista de <a class="xref" href="Application.ViewModels.POA.POA_DocBaseViewModel.html">POA_DocBaseViewModel</a>.
+Para cada documento, se carga la tarea asociada, el valor solicitado de los movimientos relacionados y una lista de documentos secundarios
+que cumplen ciertos criterios.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_InsertarContrato_Domain_Entities_JUR_JUR_Contrato_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.InsertarContrato(Domain.Entities.JUR.JUR_Contrato)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L44">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L70">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_InsertarContrato_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.InsertarContrato*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_InsertarContrato_Domain_Entities_JUR_JUR_Contrato_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.InsertarContrato(Domain.Entities.JUR.JUR_Contrato)">InsertarContrato(JUR_Contrato)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Inserta un nuevo contrato en la base de datos.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -315,7 +345,8 @@
       <tr>
         <td><a class="xref" href="Domain.Entities.JUR.JUR_Contrato.html">JUR_Contrato</a></td>
         <td><span class="parametername">newJur_Contrato</span></td>
-        <td></td>
+        <td><p>El objeto <a class="xref" href="Domain.Entities.JUR.JUR_Contrato.html">JUR_Contrato</a> que contiene los detalles del contrato a insertar.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,16 +361,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Un mensaje de confirmación que indica que el contrato se ha creado correctamente, incluyendo su ID y el ID del documento asociado.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_InsertarContrato_Domain_Entities_JUR_JUR_Contrato__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Este método realiza validaciones para asegurar que se han proporcionado un tipo de contrato y un contratista
+antes de agregar el nuevo contrato a la base de datos. Si las validaciones son exitosas, se guarda el contrato
+y se retorna un mensaje de éxito.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerFechaInicioEjecucion_System_Int32_System_String_System_String_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerFechaInicioEjecucion(System.Int32%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L173">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L209">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerFechaInicioEjecucion_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerFechaInicioEjecucion*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerFechaInicioEjecucion_System_Int32_System_String_System_String_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerFechaInicioEjecucion(System.Int32,System.String,System.String)">ObtenerFechaInicioEjecucion(Int32, String, String)</h4>
@@ -347,7 +384,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;string&gt; ObtenerFechaInicioEjecucion(int idDoc, string tipoContrato, string fechaAprobacion)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;string&gt; ObtenerFechaInicioEjecucion(int idDoc, string tipoTarea, string fechaAprobacion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -366,7 +403,7 @@
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">tipoContrato</span></td>
+        <td><span class="parametername">tipoTarea</span></td>
         <td></td>
       </tr>
       <tr>
@@ -396,7 +433,7 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerValorDiferencia_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerValorDiferencia(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L160">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L196">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerValorDiferencia_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerValorDiferencia*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ObtenerValorDiferencia_System_Int32_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ObtenerValorDiferencia(System.Int32)">ObtenerValorDiferencia(Int32)</h4>
@@ -443,11 +480,12 @@
     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ValidacionesCreacionContrato_System_Int32_.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ValidacionesCreacionContrato(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L193">View Source</a>
+    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L244">View Source</a>
   </span>
   <a id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ValidacionesCreacionContrato_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ValidacionesCreacionContrato*"></a>
   <h4 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ValidacionesCreacionContrato_System_Int32_" data-uid="Application.Servicios.JUR.JUR_DocAdjudicadoServicio.ValidacionesCreacionContrato(System.Int32)">ValidacionesCreacionContrato(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Realiza las validaciones necesarias antes de la creación de un contrato.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -470,6 +508,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Application_Servicios_JUR_JUR_DocAdjudicadoServicio_ValidacionesCreacionContrato_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><ul>
+<li>Se verifica que el tipo de contrato sea válido (debe ser principal o complementario).</li>
+<li>Se comprueba que el documento tenga un contratista asignado.</li>
+<li>Se asegura que no exista ya un contrato asociado al documento.</li>
+</ul>
+</div>
 </article>
           </div>
           
@@ -481,7 +526,7 @@
                     <a href="https://github.com/vmejiaec/SiproV2/new/Reportes-SIPRO/apiSpec/new?filename=Application_Servicios_JUR_JUR_DocAdjudicadoServicio.md&amp;value=---%0Auid%3A%20Application.Servicios.JUR.JUR_DocAdjudicadoServicio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/vmejiaec/SiproV2/blob/Reportes-SIPRO/Application/Servicios/JUR/JUR_DocAdjudicadoServicio.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
