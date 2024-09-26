@@ -5685,7 +5685,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tools.Estados.html",
-          "hash": "D1SPoNL0yIJQG91XaYfP6P1Z3/8++EEBXwWtAXYnb/8="
+          "hash": "bjzCG3mQnIYQFX4B/EN3qaWZhePpyZzA3zNTDIx500E="
         }
       },
       "is_incremental": false,
@@ -8109,7 +8109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Web.Utils.TempDataHelper.html",
-          "hash": "RjOlWoiE5uNvWPPlxImdaAGoZJHjfc14cIDDF/cIYq0="
+          "hash": "J3fabn4qd9pF1U9mtSnhq6zZ3wjXFZxF6UQKP5XxQEg="
         }
       },
       "is_incremental": false,
@@ -12088,9 +12088,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/CreacionEntidades.md",
       "output": {
@@ -12099,13 +12096,10 @@
           "hash": "Wc2DA2z6RzKyl8Hne7dnb+o1l/KyoO3FTjyx1MznuN0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/CreacionPantallasReportes.md",
       "output": {
@@ -12114,7 +12108,7 @@
           "hash": "pU0m9nS/Og3uJ08aFylg+Vva9xYKwF6GUaSW6y7wwoA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -12136,6 +12130,226 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "rk+xl7Ar0GSUdG2x9RgU/RTRnxZQuqe68MqS9Kjwv+g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/ADM_Reporte.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/ADM_Reporte.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/ADM_ReporteDb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/ADM_ReporteDb.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/ADM_ReportePieFirma.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/ADM_ReportePieFirma.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/ADM_ReportePieFirmaDb.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/ADM_ReportePieFirmaDb.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/EjecutarMigracion.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/EjecutarMigracion.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ADM/SiproContext.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ADM/SiproContext.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/AddGetController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/AddGetController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/AddPostController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/AddPostController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/CarpetaControllers.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/CarpetaControllers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/ControladorReportesVacio.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/ControladorReportesVacio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/DeclararContextController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/DeclararContextController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/DeleteGetController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/DeleteGetController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/DeletePostController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/DeletePostController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/EditGetController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/EditGetController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/EditPostController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/EditPostController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/IndexController.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/IndexController.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/NomenclaturaControllerReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/NomenclaturaControllerReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/Paso1ControllerReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/Paso1ControllerReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/Paso2ControllerReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/Paso2ControllerReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Controlador/Paso3ControllerReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Controlador/Paso3ControllerReportes.png"
         }
       },
       "is_incremental": false,
@@ -12165,10 +12379,329 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Menu/ArchivoDatosIniciales.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/ArchivoDatosIniciales.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/AsignarRolReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/AsignarRolReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/EjecutarXMigracion.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/EjecutarXMigracion.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/MenuAdministracionYaml.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/MenuAdministracionYaml.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/MenuReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/MenuReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Menu/VistaMenuReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Menu/VistaMenuReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/CarpetaViews.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/CarpetaViews.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/CarpetaVistaReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/CarpetaVistaReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclaracionModelAdd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclaracionModelAdd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclaracionModelDelete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclaracionModelDelete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclaracionModelEdit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclaracionModelEdit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclaracionModelIndex.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclaracionModelIndex.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclaracionTituloIndex.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclaracionTituloIndex.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararBotonAdd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararBotonAdd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararInputsAdd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararInputsAdd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararInputsDelete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararInputsDelete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararInputsEdit.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararInputsEdit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararTablaBody.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararTablaBody.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/DeclararTablaHead.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/DeclararTablaHead.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/NuevaCarpeta.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/NuevaCarpeta.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/Paso1VistaReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/Paso1VistaReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/Paso2VistaReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/Paso2VistaReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/Paso3VistaReportes.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/Paso3VistaReportes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/VistaBotonAdd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/VistaBotonAdd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/VistaFormularioAdd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/VistaFormularioAdd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/VistaTabla.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/VistaTabla.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Vista/VistaTitulo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Vista/VistaTitulo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/WebAreas.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/WebAreas.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/image.png",
       "output": {
         "resource": {
           "relative_path": "images/image.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/prueba.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/prueba.png"
         }
       },
       "is_incremental": false,
